@@ -5,13 +5,12 @@ Ejercicio de entrenamiento para poblar un DW por medio de Apache Airflow
 
 ## 1. Setup
 
-1. Crear nuevos directorios
+1. Crear archivo `.env` con la variable AIRFLOW_UID
 ```
-mkdir -p ./dags ./logs ./plugins ./data
 echo -e "AIRFLOW_UID=$(id -u)" > .env
 ```
 
-2. Editar .env y añadir
+2. Editar .env y añadir librerias requeridas
 ```
 _PIP_ADDITIONAL_REQUIREMENTS=openpyxl
 ```
