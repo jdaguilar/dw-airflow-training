@@ -1,0 +1,713 @@
+COD_AMBITO;SEXO;EDAD;NUM_EGR_NV1;NUM_EGR_NV2
+        0111 - Ciencias de la educación;Mujeres;    Menos de 25 años;1118;974
+        0112 - Formación de docentes de enseñanza infantil;Mujeres;    Menos de 25 años;6093;0
+        0113 - Formación de docentes de enseñanza primaria;Mujeres;    Menos de 25 años;6948;173
+        0114 - Formación de docentes de educación secundaria y formación profesional;Mujeres;    Menos de 25 años;0;4619
+        0119 - Educación (otros estudios);Mujeres;    Menos de 25 años;1321;101
+        0211 - Técnicas audiovisuales y medios de comunicación;Mujeres;    Menos de 25 años;1303;222
+        0212 - Diseño de moda e interiorismo;Mujeres;    Menos de 25 años;479;32
+        0213 - Bellas artes;Mujeres;    Menos de 25 años;1569;162
+        0214 - Conservación, restauración y artesanía;Mujeres;    Menos de 25 años;138;28
+        0215 - Música y artes del espectáculo;Mujeres;    Menos de 25 años;126;90
+        0219 - Artes (otros estudios);Mujeres;    Menos de 25 años;0;4
+        0221 - Religión y teología;Mujeres;    Menos de 25 años;0;7
+        0222 - Historia y arqueología;Mujeres;    Menos de 25 años;667;212
+        0223 - Filosofía y ética;Mujeres;    Menos de 25 años;175;81
+        0229 - Humanidades (otros estudios);Mujeres;    Menos de 25 años;209;45
+        0231 - Aprendizaje de segundas lenguas;Mujeres;    Menos de 25 años;3318;468
+        0232 - Literatura y lingüística;Mujeres;    Menos de 25 años;1039;336
+        0239 - Lenguas (otros estudios);Mujeres;    Menos de 25 años;518;75
+        0311 - Economía;Mujeres;    Menos de 25 años;1139;249
+        0312 - Ciencias políticas;Mujeres;    Menos de 25 años;532;401
+        0313 - Psicología;Mujeres;    Menos de 25 años;3597;755
+        0314 - Sociología, antropología y geografía social y cultural;Mujeres;    Menos de 25 años;1371;494
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Mujeres;    Menos de 25 años;9;53
+        0321 - Periodismo y comunicación;Mujeres;    Menos de 25 años;1734;432
+        0322 - Biblioteconomía, documentación y archivos;Mujeres;    Menos de 25 años;89;62
+        0329 - Periodismo y documentación (otros estudios);Mujeres;    Menos de 25 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Mujeres;    Menos de 25 años;0;264
+        0412 - Finanzas, banca y seguros;Mujeres;    Menos de 25 años;486;369
+        0413 - Dirección y administración;Mujeres;    Menos de 25 años;6484;1191
+        0414 - Marketing y publicidad;Mujeres;    Menos de 25 años;2151;465
+        0416 - Ventas al por mayor y al por menor;Mujeres;    Menos de 25 años;205;42
+        0419 - Negocios y administración (otros estudios);Mujeres;    Menos de 25 años;0;2
+        0421 - Derecho;Mujeres;    Menos de 25 años;5928;2264
+        0511 - Biología;Mujeres;    Menos de 25 años;1681;411
+        0512 - Bioquímica;Mujeres;    Menos de 25 años;1146;390
+        0519 - Ciencias de la vida (otros estudios);Mujeres;    Menos de 25 años;194;181
+        0521 - Ciencias del medio ambiente;Mujeres;    Menos de 25 años;436;89
+        0522 - Entornos naturales y vida silvestre;Mujeres;    Menos de 25 años;0;83
+        0529 - Medio ambiente (otros estudios);Mujeres;    Menos de 25 años;0;0
+        0531 - Química;Mujeres;    Menos de 25 años;841;249
+        0532 - Ciencias de la Tierra;Mujeres;    Menos de 25 años;300;111
+        0533 - Física;Mujeres;    Menos de 25 años;242;94
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Mujeres;    Menos de 25 años;9;23
+        0541 - Matemáticas;Mujeres;    Menos de 25 años;332;72
+        0542 - Estadística;Mujeres;    Menos de 25 años;43;31
+        0549 - Matemáticas y estadística (otros estudios);Mujeres;    Menos de 25 años;0;7
+        0612 - Diseño y administración de bases de datos y redes;Mujeres;    Menos de 25 años;0;9
+        0613 - Desarrollo y análisis de aplicaciones y de software;Mujeres;    Menos de 25 años;45;42
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Mujeres;    Menos de 25 años;277;56
+        0711 - Ingeniería y procesos químicos;Mujeres;    Menos de 25 años;529;137
+        0712 - Control y tecnología medioambiental;Mujeres;    Menos de 25 años;52;107
+        0713 - Electricidad y energía;Mujeres;    Menos de 25 años;242;66
+        0714 - Electrónica y automática;Mujeres;    Menos de 25 años;590;155
+        0715 - Maquinaria y metalurgia;Mujeres;    Menos de 25 años;1373;394
+        0716 - Vehículos de motor, barcos y aeronaves;Mujeres;    Menos de 25 años;263;89
+        0719 - Ingeniería y profesiones afines (otros estudios);Mujeres;    Menos de 25 años;203;109
+        0721 - Industria de la alimentación;Mujeres;    Menos de 25 años;468;240
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Mujeres;    Menos de 25 años;37;29
+        0723 - Industria textil, confección, del calzado y piel;Mujeres;    Menos de 25 años;6;7
+        0724 - Minería y extracción;Mujeres;    Menos de 25 años;86;30
+        0729 - Industria manufacturera y producción (otros estudios);Mujeres;    Menos de 25 años;0;0
+        0731 - Arquitectura y urbanismo;Mujeres;    Menos de 25 años;955;368
+        0732 - Ingeniería civil y de la edificación;Mujeres;    Menos de 25 años;657;191
+        0739 - Arquitectura y construcción (otros estudios);Mujeres;    Menos de 25 años;0;2
+        0811 - Producción agrícola y explotación ganadera;Mujeres;    Menos de 25 años;248;67
+        0812 - Horticultura y jardinería;Mujeres;    Menos de 25 años;2;2
+        0819 - Agricultura y ganadería (otros estudios);Mujeres;    Menos de 25 años;0;6
+        0821 - Silvicultura;Mujeres;    Menos de 25 años;47;26
+        0831 - Pesca;Mujeres;    Menos de 25 años;0;21
+        0841 - Veterinaria;Mujeres;    Menos de 25 años;648;25
+        0911 - Odontología;Mujeres;    Menos de 25 años;731;44
+        0912 - Medicina;Mujeres;    Menos de 25 años;3744;250
+        0913 - Enfermería;Mujeres;    Menos de 25 años;6365;297
+        0914 - Tecnología de diagnóstico y tratamiento médico;Mujeres;    Menos de 25 años;548;297
+        0915 - Terapia y rehabilitación;Mujeres;    Menos de 25 años;3233;523
+        0916 - Farmacia;Mujeres;    Menos de 25 años;1397;117
+        0919 - Salud (otros estudios);Mujeres;    Menos de 25 años;0;1119
+        0923 - Trabajo social y orientación;Mujeres;    Menos de 25 años;1790;433
+        0929 -  Servicios sociales (otros estudios);Mujeres;    Menos de 25 años;0;0
+        1013 - Hostelería;Mujeres;    Menos de 25 años;59;52
+        1014 - Actividades físicas y deportivas;Mujeres;    Menos de 25 años;480;110
+        1015 - Viajes, turismo y ocio;Mujeres;    Menos de 25 años;1797;264
+        1019 - Servicios personales (otros estudios);Mujeres;    Menos de 25 años;0;0
+        1022 - Salud y seguridad laboral;Mujeres;    Menos de 25 años;1;171
+        1029 - Saneamiento y seguridad laboral (otros estudios);Mujeres;    Menos de 25 años;0;0
+        1031 - Enseñanza militar;Mujeres;    Menos de 25 años;7;10
+        1032 - Protección de la propiedad y las personas;Mujeres;    Menos de 25 años;5;41
+        1039 - Servicios de seguridad (otros estudios);Mujeres;    Menos de 25 años;0;0
+        1041 - Servicios de transporte;Mujeres;    Menos de 25 años;71;19
+        0111 - Ciencias de la educación;Mujeres;    De 25 a 30 años;393;1253
+        0112 - Formación de docentes de enseñanza infantil;Mujeres;    De 25 a 30 años;2607;4
+        0113 - Formación de docentes de enseñanza primaria;Mujeres;    De 25 a 30 años;2451;131
+        0114 - Formación de docentes de educación secundaria y formación profesional;Mujeres;    De 25 a 30 años;7;4816
+        0119 - Educación (otros estudios);Mujeres;    De 25 a 30 años;582;59
+        0211 - Técnicas audiovisuales y medios de comunicación;Mujeres;    De 25 a 30 años;154;152
+        0212 - Diseño de moda e interiorismo;Mujeres;    De 25 a 30 años;51;30
+        0213 - Bellas artes;Mujeres;    De 25 a 30 años;303;144
+        0214 - Conservación, restauración y artesanía;Mujeres;    De 25 a 30 años;32;19
+        0215 - Música y artes del espectáculo;Mujeres;    De 25 a 30 años;21;95
+        0219 - Artes (otros estudios);Mujeres;    De 25 a 30 años;0;6
+        0221 - Religión y teología;Mujeres;    De 25 a 30 años;0;8
+        0222 - Historia y arqueología;Mujeres;    De 25 a 30 años;142;115
+        0223 - Filosofía y ética;Mujeres;    De 25 a 30 años;52;84
+        0229 - Humanidades (otros estudios);Mujeres;    De 25 a 30 años;36;30
+        0231 - Aprendizaje de segundas lenguas;Mujeres;    De 25 a 30 años;399;246
+        0232 - Literatura y lingüística;Mujeres;    De 25 a 30 años;182;168
+        0239 - Lenguas (otros estudios);Mujeres;    De 25 a 30 años;59;42
+        0311 - Economía;Mujeres;    De 25 a 30 años;249;214
+        0312 - Ciencias políticas;Mujeres;    De 25 a 30 años;79;440
+        0313 - Psicología;Mujeres;    De 25 a 30 años;961;672
+        0314 - Sociología, antropología y geografía social y cultural;Mujeres;    De 25 a 30 años;258;438
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Mujeres;    De 25 a 30 años;0;42
+        0321 - Periodismo y comunicación;Mujeres;    De 25 a 30 años;284;274
+        0322 - Biblioteconomía, documentación y archivos;Mujeres;    De 25 a 30 años;52;55
+        0329 - Periodismo y documentación (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Mujeres;    De 25 a 30 años;0;281
+        0412 - Finanzas, banca y seguros;Mujeres;    De 25 a 30 años;268;245
+        0413 - Dirección y administración;Mujeres;    De 25 a 30 años;2119;1724
+        0414 - Marketing y publicidad;Mujeres;    De 25 a 30 años;376;360
+        0416 - Ventas al por mayor y al por menor;Mujeres;    De 25 a 30 años;51;55
+        0419 - Negocios y administración (otros estudios);Mujeres;    De 25 a 30 años;0;6
+        0421 - Derecho;Mujeres;    De 25 a 30 años;1334;1426
+        0511 - Biología;Mujeres;    De 25 a 30 años;226;103
+        0512 - Bioquímica;Mujeres;    De 25 a 30 años;40;129
+        0519 - Ciencias de la vida (otros estudios);Mujeres;    De 25 a 30 años;5;28
+        0521 - Ciencias del medio ambiente;Mujeres;    De 25 a 30 años;142;46
+        0522 - Entornos naturales y vida silvestre;Mujeres;    De 25 a 30 años;0;51
+        0529 - Medio ambiente (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        0531 - Química;Mujeres;    De 25 a 30 años;137;98
+        0532 - Ciencias de la Tierra;Mujeres;    De 25 a 30 años;67;109
+        0533 - Física;Mujeres;    De 25 a 30 años;30;33
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Mujeres;    De 25 a 30 años;0;7
+        0541 - Matemáticas;Mujeres;    De 25 a 30 años;74;19
+        0542 - Estadística;Mujeres;    De 25 a 30 años;9;38
+        0549 - Matemáticas y estadística (otros estudios);Mujeres;    De 25 a 30 años;0;2
+        0612 - Diseño y administración de bases de datos y redes;Mujeres;    De 25 a 30 años;0;23
+        0613 - Desarrollo y análisis de aplicaciones y de software;Mujeres;    De 25 a 30 años;10;47
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Mujeres;    De 25 a 30 años;145;44
+        0711 - Ingeniería y procesos químicos;Mujeres;    De 25 a 30 años;182;61
+        0712 - Control y tecnología medioambiental;Mujeres;    De 25 a 30 años;2;127
+        0713 - Electricidad y energía;Mujeres;    De 25 a 30 años;37;72
+        0714 - Electrónica y automática;Mujeres;    De 25 a 30 años;228;65
+        0715 - Maquinaria y metalurgia;Mujeres;    De 25 a 30 años;374;127
+        0716 - Vehículos de motor, barcos y aeronaves;Mujeres;    De 25 a 30 años;77;30
+        0719 - Ingeniería y profesiones afines (otros estudios);Mujeres;    De 25 a 30 años;40;80
+        0721 - Industria de la alimentación;Mujeres;    De 25 a 30 años;94;160
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Mujeres;    De 25 a 30 años;4;19
+        0723 - Industria textil, confección, del calzado y piel;Mujeres;    De 25 a 30 años;0;1
+        0724 - Minería y extracción;Mujeres;    De 25 a 30 años;33;12
+        0729 - Industria manufacturera y producción (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        0731 - Arquitectura y urbanismo;Mujeres;    De 25 a 30 años;1021;327
+        0732 - Ingeniería civil y de la edificación;Mujeres;    De 25 a 30 años;542;211
+        0739 - Arquitectura y construcción (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        0811 - Producción agrícola y explotación ganadera;Mujeres;    De 25 a 30 años;134;76
+        0812 - Horticultura y jardinería;Mujeres;    De 25 a 30 años;3;4
+        0819 - Agricultura y ganadería (otros estudios);Mujeres;    De 25 a 30 años;0;1
+        0821 - Silvicultura;Mujeres;    De 25 a 30 años;54;27
+        0831 - Pesca;Mujeres;    De 25 a 30 años;0;22
+        0841 - Veterinaria;Mujeres;    De 25 a 30 años;179;19
+        0911 - Odontología;Mujeres;    De 25 a 30 años;197;65
+        0912 - Medicina;Mujeres;    De 25 a 30 años;549;463
+        0913 - Enfermería;Mujeres;    De 25 a 30 años;1169;236
+        0914 - Tecnología de diagnóstico y tratamiento médico;Mujeres;    De 25 a 30 años;94;142
+        0915 - Terapia y rehabilitación;Mujeres;    De 25 a 30 años;775;369
+        0916 - Farmacia;Mujeres;    De 25 a 30 años;307;61
+        0919 - Salud (otros estudios);Mujeres;    De 25 a 30 años;0;964
+        0923 - Trabajo social y orientación;Mujeres;    De 25 a 30 años;630;328
+        0929 -  Servicios sociales (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        1013 - Hostelería;Mujeres;    De 25 a 30 años;12;53
+        1014 - Actividades físicas y deportivas;Mujeres;    De 25 a 30 años;132;69
+        1015 - Viajes, turismo y ocio;Mujeres;    De 25 a 30 años;481;259
+        1019 - Servicios personales (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        1022 - Salud y seguridad laboral;Mujeres;    De 25 a 30 años;6;583
+        1029 - Saneamiento y seguridad laboral (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        1031 - Enseñanza militar;Mujeres;    De 25 a 30 años;0;1
+        1032 - Protección de la propiedad y las personas;Mujeres;    De 25 a 30 años;2;31
+        1039 - Servicios de seguridad (otros estudios);Mujeres;    De 25 a 30 años;0;0
+        1041 - Servicios de transporte;Mujeres;    De 25 a 30 años;16;30
+        0111 - Ciencias de la educación;Mujeres;    De 31 a 40 años;199;1096
+        0112 - Formación de docentes de enseñanza infantil;Mujeres;    De 31 a 40 años;1053;3
+        0113 - Formación de docentes de enseñanza primaria;Mujeres;    De 31 a 40 años;1677;52
+        0114 - Formación de docentes de educación secundaria y formación profesional;Mujeres;    De 31 a 40 años;3;2931
+        0119 - Educación (otros estudios);Mujeres;    De 31 a 40 años;235;39
+        0211 - Técnicas audiovisuales y medios de comunicación;Mujeres;    De 31 a 40 años;37;62
+        0212 - Diseño de moda e interiorismo;Mujeres;    De 31 a 40 años;14;16
+        0213 - Bellas artes;Mujeres;    De 31 a 40 años;118;43
+        0214 - Conservación, restauración y artesanía;Mujeres;    De 31 a 40 años;9;11
+        0215 - Música y artes del espectáculo;Mujeres;    De 31 a 40 años;6;111
+        0219 - Artes (otros estudios);Mujeres;    De 31 a 40 años;0;2
+        0221 - Religión y teología;Mujeres;    De 31 a 40 años;4;9
+        0222 - Historia y arqueología;Mujeres;    De 31 a 40 años;54;38
+        0223 - Filosofía y ética;Mujeres;    De 31 a 40 años;16;79
+        0229 - Humanidades (otros estudios);Mujeres;    De 31 a 40 años;24;21
+        0231 - Aprendizaje de segundas lenguas;Mujeres;    De 31 a 40 años;143;108
+        0232 - Literatura y lingüística;Mujeres;    De 31 a 40 años;59;87
+        0239 - Lenguas (otros estudios);Mujeres;    De 31 a 40 años;12;23
+        0311 - Economía;Mujeres;    De 31 a 40 años;54;67
+        0312 - Ciencias políticas;Mujeres;    De 31 a 40 años;34;214
+        0313 - Psicología;Mujeres;    De 31 a 40 años;475;510
+        0314 - Sociología, antropología y geografía social y cultural;Mujeres;    De 31 a 40 años;111;226
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Mujeres;    De 31 a 40 años;0;17
+        0321 - Periodismo y comunicación;Mujeres;    De 31 a 40 años;80;92
+        0322 - Biblioteconomía, documentación y archivos;Mujeres;    De 31 a 40 años;47;32
+        0329 - Periodismo y documentación (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Mujeres;    De 31 a 40 años;0;71
+        0412 - Finanzas, banca y seguros;Mujeres;    De 31 a 40 años;40;86
+        0413 - Dirección y administración;Mujeres;    De 31 a 40 años;712;1059
+        0414 - Marketing y publicidad;Mujeres;    De 31 a 40 años;87;116
+        0416 - Ventas al por mayor y al por menor;Mujeres;    De 31 a 40 años;15;15
+        0419 - Negocios y administración (otros estudios);Mujeres;    De 31 a 40 años;0;10
+        0421 - Derecho;Mujeres;    De 31 a 40 años;591;440
+        0511 - Biología;Mujeres;    De 31 a 40 años;46;26
+        0512 - Bioquímica;Mujeres;    De 31 a 40 años;7;21
+        0519 - Ciencias de la vida (otros estudios);Mujeres;    De 31 a 40 años;0;12
+        0521 - Ciencias del medio ambiente;Mujeres;    De 31 a 40 años;27;10
+        0522 - Entornos naturales y vida silvestre;Mujeres;    De 31 a 40 años;0;9
+        0529 - Medio ambiente (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        0531 - Química;Mujeres;    De 31 a 40 años;51;15
+        0532 - Ciencias de la Tierra;Mujeres;    De 31 a 40 años;14;50
+        0533 - Física;Mujeres;    De 31 a 40 años;6;10
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Mujeres;    De 31 a 40 años;0;1
+        0541 - Matemáticas;Mujeres;    De 31 a 40 años;11;8
+        0542 - Estadística;Mujeres;    De 31 a 40 años;13;21
+        0549 - Matemáticas y estadística (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        0612 - Diseño y administración de bases de datos y redes;Mujeres;    De 31 a 40 años;0;11
+        0613 - Desarrollo y análisis de aplicaciones y de software;Mujeres;    De 31 a 40 años;6;34
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Mujeres;    De 31 a 40 años;182;19
+        0711 - Ingeniería y procesos químicos;Mujeres;    De 31 a 40 años;88;2
+        0712 - Control y tecnología medioambiental;Mujeres;    De 31 a 40 años;1;32
+        0713 - Electricidad y energía;Mujeres;    De 31 a 40 años;20;42
+        0714 - Electrónica y automática;Mujeres;    De 31 a 40 años;145;15
+        0715 - Maquinaria y metalurgia;Mujeres;    De 31 a 40 años;139;18
+        0716 - Vehículos de motor, barcos y aeronaves;Mujeres;    De 31 a 40 años;11;7
+        0719 - Ingeniería y profesiones afines (otros estudios);Mujeres;    De 31 a 40 años;56;40
+        0721 - Industria de la alimentación;Mujeres;    De 31 a 40 años;28;60
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Mujeres;    De 31 a 40 años;2;1
+        0723 - Industria textil, confección, del calzado y piel;Mujeres;    De 31 a 40 años;0;1
+        0724 - Minería y extracción;Mujeres;    De 31 a 40 años;22;3
+        0729 - Industria manufacturera y producción (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        0731 - Arquitectura y urbanismo;Mujeres;    De 31 a 40 años;180;96
+        0732 - Ingeniería civil y de la edificación;Mujeres;    De 31 a 40 años;150;22
+        0739 - Arquitectura y construcción (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        0811 - Producción agrícola y explotación ganadera;Mujeres;    De 31 a 40 años;122;19
+        0812 - Horticultura y jardinería;Mujeres;    De 31 a 40 años;26;2
+        0819 - Agricultura y ganadería (otros estudios);Mujeres;    De 31 a 40 años;0;1
+        0821 - Silvicultura;Mujeres;    De 31 a 40 años;85;7
+        0831 - Pesca;Mujeres;    De 31 a 40 años;0;3
+        0841 - Veterinaria;Mujeres;    De 31 a 40 años;35;6
+        0911 - Odontología;Mujeres;    De 31 a 40 años;45;18
+        0912 - Medicina;Mujeres;    De 31 a 40 años;111;344
+        0913 - Enfermería;Mujeres;    De 31 a 40 años;405;130
+        0914 - Tecnología de diagnóstico y tratamiento médico;Mujeres;    De 31 a 40 años;59;61
+        0915 - Terapia y rehabilitación;Mujeres;    De 31 a 40 años;260;219
+        0916 - Farmacia;Mujeres;    De 31 a 40 años;61;13
+        0919 - Salud (otros estudios);Mujeres;    De 31 a 40 años;0;409
+        0923 - Trabajo social y orientación;Mujeres;    De 31 a 40 años;252;195
+        0929 -  Servicios sociales (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        1013 - Hostelería;Mujeres;    De 31 a 40 años;3;15
+        1014 - Actividades físicas y deportivas;Mujeres;    De 31 a 40 años;22;24
+        1015 - Viajes, turismo y ocio;Mujeres;    De 31 a 40 años;165;75
+        1019 - Servicios personales (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        1022 - Salud y seguridad laboral;Mujeres;    De 31 a 40 años;1;588
+        1029 - Saneamiento y seguridad laboral (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        1031 - Enseñanza militar;Mujeres;    De 31 a 40 años;0;0
+        1032 - Protección de la propiedad y las personas;Mujeres;    De 31 a 40 años;2;35
+        1039 - Servicios de seguridad (otros estudios);Mujeres;    De 31 a 40 años;0;0
+        1041 - Servicios de transporte;Mujeres;    De 31 a 40 años;13;13
+        0111 - Ciencias de la educación;Mujeres;    Más de 40 años;97;644
+        0112 - Formación de docentes de enseñanza infantil;Mujeres;    Más de 40 años;279;0
+        0113 - Formación de docentes de enseñanza primaria;Mujeres;    Más de 40 años;577;25
+        0114 - Formación de docentes de educación secundaria y formación profesional;Mujeres;    Más de 40 años;0;1000
+        0119 - Educación (otros estudios);Mujeres;    Más de 40 años;181;10
+        0211 - Técnicas audiovisuales y medios de comunicación;Mujeres;    Más de 40 años;10;31
+        0212 - Diseño de moda e interiorismo;Mujeres;    Más de 40 años;5;1
+        0213 - Bellas artes;Mujeres;    Más de 40 años;187;30
+        0214 - Conservación, restauración y artesanía;Mujeres;    Más de 40 años;6;6
+        0215 - Música y artes del espectáculo;Mujeres;    Más de 40 años;1;62
+        0219 - Artes (otros estudios);Mujeres;    Más de 40 años;0;2
+        0221 - Religión y teología;Mujeres;    Más de 40 años;4;10
+        0222 - Historia y arqueología;Mujeres;    Más de 40 años;70;43
+        0223 - Filosofía y ética;Mujeres;    Más de 40 años;21;45
+        0229 - Humanidades (otros estudios);Mujeres;    Más de 40 años;35;23
+        0231 - Aprendizaje de segundas lenguas;Mujeres;    Más de 40 años;104;40
+        0232 - Literatura y lingüística;Mujeres;    Más de 40 años;53;57
+        0239 - Lenguas (otros estudios);Mujeres;    Más de 40 años;12;6
+        0311 - Economía;Mujeres;    Más de 40 años;17;17
+        0312 - Ciencias políticas;Mujeres;    Más de 40 años;55;104
+        0313 - Psicología;Mujeres;    Más de 40 años;376;224
+        0314 - Sociología, antropología y geografía social y cultural;Mujeres;    Más de 40 años;94;111
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Mujeres;    Más de 40 años;0;9
+        0321 - Periodismo y comunicación;Mujeres;    Más de 40 años;37;33
+        0322 - Biblioteconomía, documentación y archivos;Mujeres;    Más de 40 años;47;18
+        0329 - Periodismo y documentación (otros estudios);Mujeres;    Más de 40 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Mujeres;    Más de 40 años;0;22
+        0412 - Finanzas, banca y seguros;Mujeres;    Más de 40 años;14;21
+        0413 - Dirección y administración;Mujeres;    Más de 40 años;474;414
+        0414 - Marketing y publicidad;Mujeres;    Más de 40 años;26;38
+        0416 - Ventas al por mayor y al por menor;Mujeres;    Más de 40 años;10;6
+        0419 - Negocios y administración (otros estudios);Mujeres;    Más de 40 años;0;8
+        0421 - Derecho;Mujeres;    Más de 40 años;451;255
+        0511 - Biología;Mujeres;    Más de 40 años;7;5
+        0512 - Bioquímica;Mujeres;    Más de 40 años;4;4
+        0519 - Ciencias de la vida (otros estudios);Mujeres;    Más de 40 años;1;0
+        0521 - Ciencias del medio ambiente;Mujeres;    Más de 40 años;6;4
+        0522 - Entornos naturales y vida silvestre;Mujeres;    Más de 40 años;0;1
+        0529 - Medio ambiente (otros estudios);Mujeres;    Más de 40 años;0;0
+        0531 - Química;Mujeres;    Más de 40 años;3;6
+        0532 - Ciencias de la Tierra;Mujeres;    Más de 40 años;6;16
+        0533 - Física;Mujeres;    Más de 40 años;2;3
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Mujeres;    Más de 40 años;0;1
+        0541 - Matemáticas;Mujeres;    Más de 40 años;8;1
+        0542 - Estadística;Mujeres;    Más de 40 años;5;5
+        0549 - Matemáticas y estadística (otros estudios);Mujeres;    Más de 40 años;0;1
+        0612 - Diseño y administración de bases de datos y redes;Mujeres;    Más de 40 años;0;1
+        0613 - Desarrollo y análisis de aplicaciones y de software;Mujeres;    Más de 40 años;2;22
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Mujeres;    Más de 40 años;88;11
+        0711 - Ingeniería y procesos químicos;Mujeres;    Más de 40 años;9;1
+        0712 - Control y tecnología medioambiental;Mujeres;    Más de 40 años;0;9
+        0713 - Electricidad y energía;Mujeres;    Más de 40 años;3;12
+        0714 - Electrónica y automática;Mujeres;    Más de 40 años;29;3
+        0715 - Maquinaria y metalurgia;Mujeres;    Más de 40 años;20;2
+        0716 - Vehículos de motor, barcos y aeronaves;Mujeres;    Más de 40 años;4;0
+        0719 - Ingeniería y profesiones afines (otros estudios);Mujeres;    Más de 40 años;16;12
+        0721 - Industria de la alimentación;Mujeres;    Más de 40 años;8;16
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Mujeres;    Más de 40 años;0;0
+        0723 - Industria textil, confección, del calzado y piel;Mujeres;    Más de 40 años;0;0
+        0724 - Minería y extracción;Mujeres;    Más de 40 años;2;0
+        0729 - Industria manufacturera y producción (otros estudios);Mujeres;    Más de 40 años;0;0
+        0731 - Arquitectura y urbanismo;Mujeres;    Más de 40 años;34;24
+        0732 - Ingeniería civil y de la edificación;Mujeres;    Más de 40 años;44;4
+        0739 - Arquitectura y construcción (otros estudios);Mujeres;    Más de 40 años;0;2
+        0811 - Producción agrícola y explotación ganadera;Mujeres;    Más de 40 años;42;9
+        0812 - Horticultura y jardinería;Mujeres;    Más de 40 años;7;2
+        0819 - Agricultura y ganadería (otros estudios);Mujeres;    Más de 40 años;0;0
+        0821 - Silvicultura;Mujeres;    Más de 40 años;21;3
+        0831 - Pesca;Mujeres;    Más de 40 años;0;1
+        0841 - Veterinaria;Mujeres;    Más de 40 años;6;0
+        0911 - Odontología;Mujeres;    Más de 40 años;15;1
+        0912 - Medicina;Mujeres;    Más de 40 años;33;102
+        0913 - Enfermería;Mujeres;    Más de 40 años;237;65
+        0914 - Tecnología de diagnóstico y tratamiento médico;Mujeres;    Más de 40 años;30;19
+        0915 - Terapia y rehabilitación;Mujeres;    Más de 40 años;118;60
+        0916 - Farmacia;Mujeres;    Más de 40 años;11;9
+        0919 - Salud (otros estudios);Mujeres;    Más de 40 años;0;176
+        0923 - Trabajo social y orientación;Mujeres;    Más de 40 años;244;114
+        0929 -  Servicios sociales (otros estudios);Mujeres;    Más de 40 años;0;0
+        1013 - Hostelería;Mujeres;    Más de 40 años;0;4
+        1014 - Actividades físicas y deportivas;Mujeres;    Más de 40 años;5;6
+        1015 - Viajes, turismo y ocio;Mujeres;    Más de 40 años;106;20
+        1019 - Servicios personales (otros estudios);Mujeres;    Más de 40 años;0;0
+        1022 - Salud y seguridad laboral;Mujeres;    Más de 40 años;2;287
+        1029 - Saneamiento y seguridad laboral (otros estudios);Mujeres;    Más de 40 años;0;0
+        1031 - Enseñanza militar;Mujeres;    Más de 40 años;0;1
+        1032 - Protección de la propiedad y las personas;Mujeres;    Más de 40 años;3;24
+        1039 - Servicios de seguridad (otros estudios);Mujeres;    Más de 40 años;0;0
+        1041 - Servicios de transporte;Mujeres;    Más de 40 años;4;3
+        0111 - Ciencias de la educación;Hombres;    Menos de 25 años;134;186
+        0112 - Formación de docentes de enseñanza infantil;Hombres;    Menos de 25 años;292;0
+        0113 - Formación de docentes de enseñanza primaria;Hombres;    Menos de 25 años;2768;16
+        0114 - Formación de docentes de educación secundaria y formación profesional;Hombres;    Menos de 25 años;0;2480
+        0119 - Educación (otros estudios);Hombres;    Menos de 25 años;190;13
+        0211 - Técnicas audiovisuales y medios de comunicación;Hombres;    Menos de 25 años;928;107
+        0212 - Diseño de moda e interiorismo;Hombres;    Menos de 25 años;134;6
+        0213 - Bellas artes;Hombres;    Menos de 25 años;527;61
+        0214 - Conservación, restauración y artesanía;Hombres;    Menos de 25 años;19;8
+        0215 - Música y artes del espectáculo;Hombres;    Menos de 25 años;85;82
+        0219 - Artes (otros estudios);Hombres;    Menos de 25 años;0;1
+        0221 - Religión y teología;Hombres;    Menos de 25 años;8;6
+        0222 - Historia y arqueología;Hombres;    Menos de 25 años;1087;281
+        0223 - Filosofía y ética;Hombres;    Menos de 25 años;228;83
+        0229 - Humanidades (otros estudios);Hombres;    Menos de 25 años;77;30
+        0231 - Aprendizaje de segundas lenguas;Hombres;    Menos de 25 años;828;128
+        0232 - Literatura y lingüística;Hombres;    Menos de 25 años;294;124
+        0239 - Lenguas (otros estudios);Hombres;    Menos de 25 años;114;14
+        0311 - Economía;Hombres;    Menos de 25 años;1202;280
+        0312 - Ciencias políticas;Hombres;    Menos de 25 años;426;202
+        0313 - Psicología;Hombres;    Menos de 25 años;908;124
+        0314 - Sociología, antropología y geografía social y cultural;Hombres;    Menos de 25 años;697;165
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Hombres;    Menos de 25 años;7;16
+        0321 - Periodismo y comunicación;Hombres;    Menos de 25 años;930;179
+        0322 - Biblioteconomía, documentación y archivos;Hombres;    Menos de 25 años;45;18
+        0329 - Periodismo y documentación (otros estudios);Hombres;    Menos de 25 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Hombres;    Menos de 25 años;0;254
+        0412 - Finanzas, banca y seguros;Hombres;    Menos de 25 años;366;521
+        0413 - Dirección y administración;Hombres;    Menos de 25 años;5164;893
+        0414 - Marketing y publicidad;Hombres;    Menos de 25 años;850;178
+        0416 - Ventas al por mayor y al por menor;Hombres;    Menos de 25 años;137;17
+        0419 - Negocios y administración (otros estudios);Hombres;    Menos de 25 años;0;6
+        0421 - Derecho;Hombres;    Menos de 25 años;3679;1410
+        0511 - Biología;Hombres;    Menos de 25 años;914;229
+        0512 - Bioquímica;Hombres;    Menos de 25 años;719;245
+        0519 - Ciencias de la vida (otros estudios);Hombres;    Menos de 25 años;63;88
+        0521 - Ciencias del medio ambiente;Hombres;    Menos de 25 años;392;60
+        0522 - Entornos naturales y vida silvestre;Hombres;    Menos de 25 años;0;56
+        0529 - Medio ambiente (otros estudios);Hombres;    Menos de 25 años;0;0
+        0531 - Química;Hombres;    Menos de 25 años;644;276
+        0532 - Ciencias de la Tierra;Hombres;    Menos de 25 años;419;158
+        0533 - Física;Hombres;    Menos de 25 años;658;252
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Hombres;    Menos de 25 años;5;23
+        0541 - Matemáticas;Hombres;    Menos de 25 años;449;130
+        0542 - Estadística;Hombres;    Menos de 25 años;71;52
+        0549 - Matemáticas y estadística (otros estudios);Hombres;    Menos de 25 años;0;14
+        0612 - Diseño y administración de bases de datos y redes;Hombres;    Menos de 25 años;0;36
+        0613 - Desarrollo y análisis de aplicaciones y de software;Hombres;    Menos de 25 años;267;185
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Hombres;    Menos de 25 años;1753;231
+        0711 - Ingeniería y procesos químicos;Hombres;    Menos de 25 años;598;159
+        0712 - Control y tecnología medioambiental;Hombres;    Menos de 25 años;36;102
+        0713 - Electricidad y energía;Hombres;    Menos de 25 años;771;165
+        0714 - Electrónica y automática;Hombres;    Menos de 25 años;2370;495
+        0715 - Maquinaria y metalurgia;Hombres;    Menos de 25 años;4159;1237
+        0716 - Vehículos de motor, barcos y aeronaves;Hombres;    Menos de 25 años;914;286
+        0719 - Ingeniería y profesiones afines (otros estudios);Hombres;    Menos de 25 años;468;177
+        0721 - Industria de la alimentación;Hombres;    Menos de 25 años;210;121
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Hombres;    Menos de 25 años;86;24
+        0723 - Industria textil, confección, del calzado y piel;Hombres;    Menos de 25 años;10;3
+        0724 - Minería y extracción;Hombres;    Menos de 25 años;177;58
+        0729 - Industria manufacturera y producción (otros estudios);Hombres;    Menos de 25 años;0;0
+        0731 - Arquitectura y urbanismo;Hombres;    Menos de 25 años;727;259
+        0732 - Ingeniería civil y de la edificación;Hombres;    Menos de 25 años;1104;409
+        0739 - Arquitectura y construcción (otros estudios);Hombres;    Menos de 25 años;0;2
+        0811 - Producción agrícola y explotación ganadera;Hombres;    Menos de 25 años;373;70
+        0812 - Horticultura y jardinería;Hombres;    Menos de 25 años;3;3
+        0819 - Agricultura y ganadería (otros estudios);Hombres;    Menos de 25 años;0;3
+        0821 - Silvicultura;Hombres;    Menos de 25 años;122;25
+        0831 - Pesca;Hombres;    Menos de 25 años;0;19
+        0841 - Veterinaria;Hombres;    Menos de 25 años;261;7
+        0911 - Odontología;Hombres;    Menos de 25 años;420;11
+        0912 - Medicina;Hombres;    Menos de 25 años;1907;83
+        0913 - Enfermería;Hombres;    Menos de 25 años;1291;91
+        0914 - Tecnología de diagnóstico y tratamiento médico;Hombres;    Menos de 25 años;224;169
+        0915 - Terapia y rehabilitación;Hombres;    Menos de 25 años;1636;207
+        0916 - Farmacia;Hombres;    Menos de 25 años;527;64
+        0919 - Salud (otros estudios);Hombres;    Menos de 25 años;0;237
+        0923 - Trabajo social y orientación;Hombres;    Menos de 25 años;263;65
+        0929 -  Servicios sociales (otros estudios);Hombres;    Menos de 25 años;0;0
+        1013 - Hostelería;Hombres;    Menos de 25 años;56;21
+        1014 - Actividades físicas y deportivas;Hombres;    Menos de 25 años;1822;256
+        1015 - Viajes, turismo y ocio;Hombres;    Menos de 25 años;614;54
+        1019 - Servicios personales (otros estudios);Hombres;    Menos de 25 años;0;0
+        1022 - Salud y seguridad laboral;Hombres;    Menos de 25 años;3;102
+        1029 - Saneamiento y seguridad laboral (otros estudios);Hombres;    Menos de 25 años;0;0
+        1031 - Enseñanza militar;Hombres;    Menos de 25 años;63;61
+        1032 - Protección de la propiedad y las personas;Hombres;    Menos de 25 años;18;27
+        1039 - Servicios de seguridad (otros estudios);Hombres;    Menos de 25 años;0;0
+        1041 - Servicios de transporte;Hombres;    Menos de 25 años;145;38
+        0111 - Ciencias de la educación;Hombres;    De 25 a 30 años;73;247
+        0112 - Formación de docentes de enseñanza infantil;Hombres;    De 25 a 30 años;203;0
+        0113 - Formación de docentes de enseñanza primaria;Hombres;    De 25 a 30 años;1373;17
+        0114 - Formación de docentes de educación secundaria y formación profesional;Hombres;    De 25 a 30 años;6;3274
+        0119 - Educación (otros estudios);Hombres;    De 25 a 30 años;151;23
+        0211 - Técnicas audiovisuales y medios de comunicación;Hombres;    De 25 a 30 años;242;119
+        0212 - Diseño de moda e interiorismo;Hombres;    De 25 a 30 años;36;13
+        0213 - Bellas artes;Hombres;    De 25 a 30 años;186;58
+        0214 - Conservación, restauración y artesanía;Hombres;    De 25 a 30 años;13;5
+        0215 - Música y artes del espectáculo;Hombres;    De 25 a 30 años;24;107
+        0219 - Artes (otros estudios);Hombres;    De 25 a 30 años;0;0
+        0221 - Religión y teología;Hombres;    De 25 a 30 años;23;15
+        0222 - Historia y arqueología;Hombres;    De 25 a 30 años;295;141
+        0223 - Filosofía y ética;Hombres;    De 25 a 30 años;76;80
+        0229 - Humanidades (otros estudios);Hombres;    De 25 a 30 años;33;17
+        0231 - Aprendizaje de segundas lenguas;Hombres;    De 25 a 30 años;198;72
+        0232 - Literatura y lingüística;Hombres;    De 25 a 30 años;88;84
+        0239 - Lenguas (otros estudios);Hombres;    De 25 a 30 años;32;23
+        0311 - Economía;Hombres;    De 25 a 30 años;389;236
+        0312 - Ciencias políticas;Hombres;    De 25 a 30 años;129;291
+        0313 - Psicología;Hombres;    De 25 a 30 años;369;132
+        0314 - Sociología, antropología y geografía social y cultural;Hombres;    De 25 a 30 años;243;200
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Hombres;    De 25 a 30 años;0;33
+        0321 - Periodismo y comunicación;Hombres;    De 25 a 30 años;243;136
+        0322 - Biblioteconomía, documentación y archivos;Hombres;    De 25 a 30 años;30;31
+        0329 - Periodismo y documentación (otros estudios);Hombres;    De 25 a 30 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Hombres;    De 25 a 30 años;0;287
+        0412 - Finanzas, banca y seguros;Hombres;    De 25 a 30 años;279;376
+        0413 - Dirección y administración;Hombres;    De 25 a 30 años;2195;1699
+        0414 - Marketing y publicidad;Hombres;    De 25 a 30 años;335;181
+        0416 - Ventas al por mayor y al por menor;Hombres;    De 25 a 30 años;63;35
+        0419 - Negocios y administración (otros estudios);Hombres;    De 25 a 30 años;0;8
+        0421 - Derecho;Hombres;    De 25 a 30 años;1179;1269
+        0511 - Biología;Hombres;    De 25 a 30 años;140;58
+        0512 - Bioquímica;Hombres;    De 25 a 30 años;25;71
+        0519 - Ciencias de la vida (otros estudios);Hombres;    De 25 a 30 años;1;16
+        0521 - Ciencias del medio ambiente;Hombres;    De 25 a 30 años;137;44
+        0522 - Entornos naturales y vida silvestre;Hombres;    De 25 a 30 años;0;34
+        0529 - Medio ambiente (otros estudios);Hombres;    De 25 a 30 años;0;0
+        0531 - Química;Hombres;    De 25 a 30 años;134;74
+        0532 - Ciencias de la Tierra;Hombres;    De 25 a 30 años;171;164
+        0533 - Física;Hombres;    De 25 a 30 años;71;73
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Hombres;    De 25 a 30 años;0;2
+        0541 - Matemáticas;Hombres;    De 25 a 30 años;70;39
+        0542 - Estadística;Hombres;    De 25 a 30 años;13;50
+        0549 - Matemáticas y estadística (otros estudios);Hombres;    De 25 a 30 años;0;1
+        0612 - Diseño y administración de bases de datos y redes;Hombres;    De 25 a 30 años;0;70
+        0613 - Desarrollo y análisis de aplicaciones y de software;Hombres;    De 25 a 30 años;87;192
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Hombres;    De 25 a 30 años;1171;190
+        0711 - Ingeniería y procesos químicos;Hombres;    De 25 a 30 años;194;82
+        0712 - Control y tecnología medioambiental;Hombres;    De 25 a 30 años;4;130
+        0713 - Electricidad y energía;Hombres;    De 25 a 30 años;421;220
+        0714 - Electrónica y automática;Hombres;    De 25 a 30 años;1091;319
+        0715 - Maquinaria y metalurgia;Hombres;    De 25 a 30 años;1641;498
+        0716 - Vehículos de motor, barcos y aeronaves;Hombres;    De 25 a 30 años;282;127
+        0719 - Ingeniería y profesiones afines (otros estudios);Hombres;    De 25 a 30 años;140;149
+        0721 - Industria de la alimentación;Hombres;    De 25 a 30 años;70;75
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Hombres;    De 25 a 30 años;20;30
+        0723 - Industria textil, confección, del calzado y piel;Hombres;    De 25 a 30 años;0;3
+        0724 - Minería y extracción;Hombres;    De 25 a 30 años;103;42
+        0729 - Industria manufacturera y producción (otros estudios);Hombres;    De 25 a 30 años;0;0
+        0731 - Arquitectura y urbanismo;Hombres;    De 25 a 30 años;1047;280
+        0732 - Ingeniería civil y de la edificación;Hombres;    De 25 a 30 años;1032;279
+        0739 - Arquitectura y construcción (otros estudios);Hombres;    De 25 a 30 años;0;4
+        0811 - Producción agrícola y explotación ganadera;Hombres;    De 25 a 30 años;249;84
+        0812 - Horticultura y jardinería;Hombres;    De 25 a 30 años;8;8
+        0819 - Agricultura y ganadería (otros estudios);Hombres;    De 25 a 30 años;0;2
+        0821 - Silvicultura;Hombres;    De 25 a 30 años;166;35
+        0831 - Pesca;Hombres;    De 25 a 30 años;0;24
+        0841 - Veterinaria;Hombres;    De 25 a 30 años;88;9
+        0911 - Odontología;Hombres;    De 25 a 30 años;200;42
+        0912 - Medicina;Hombres;    De 25 a 30 años;262;195
+        0913 - Enfermería;Hombres;    De 25 a 30 años;401;55
+        0914 - Tecnología de diagnóstico y tratamiento médico;Hombres;    De 25 a 30 años;58;104
+        0915 - Terapia y rehabilitación;Hombres;    De 25 a 30 años;587;189
+        0916 - Farmacia;Hombres;    De 25 a 30 años;173;27
+        0919 - Salud (otros estudios);Hombres;    De 25 a 30 años;0;256
+        0923 - Trabajo social y orientación;Hombres;    De 25 a 30 años;157;86
+        0929 -  Servicios sociales (otros estudios);Hombres;    De 25 a 30 años;0;0
+        1013 - Hostelería;Hombres;    De 25 a 30 años;18;27
+        1014 - Actividades físicas y deportivas;Hombres;    De 25 a 30 años;728;238
+        1015 - Viajes, turismo y ocio;Hombres;    De 25 a 30 años;298;115
+        1019 - Servicios personales (otros estudios);Hombres;    De 25 a 30 años;0;0
+        1022 - Salud y seguridad laboral;Hombres;    De 25 a 30 años;9;478
+        1029 - Saneamiento y seguridad laboral (otros estudios);Hombres;    De 25 a 30 años;0;0
+        1031 - Enseñanza militar;Hombres;    De 25 a 30 años;1;4
+        1032 - Protección de la propiedad y las personas;Hombres;    De 25 a 30 años;15;37
+        1039 - Servicios de seguridad (otros estudios);Hombres;    De 25 a 30 años;0;0
+        1041 - Servicios de transporte;Hombres;    De 25 a 30 años;69;56
+        0111 - Ciencias de la educación;Hombres;    De 31 a 40 años;45;299
+        0112 - Formación de docentes de enseñanza infantil;Hombres;    De 31 a 40 años;105;0
+        0113 - Formación de docentes de enseñanza primaria;Hombres;    De 31 a 40 años;684;16
+        0114 - Formación de docentes de educación secundaria y formación profesional;Hombres;    De 31 a 40 años;12;2107
+        0119 - Educación (otros estudios);Hombres;    De 31 a 40 años;102;21
+        0211 - Técnicas audiovisuales y medios de comunicación;Hombres;    De 31 a 40 años;102;73
+        0212 - Diseño de moda e interiorismo;Hombres;    De 31 a 40 años;12;6
+        0213 - Bellas artes;Hombres;    De 31 a 40 años;82;29
+        0214 - Conservación, restauración y artesanía;Hombres;    De 31 a 40 años;6;3
+        0215 - Música y artes del espectáculo;Hombres;    De 31 a 40 años;6;119
+        0219 - Artes (otros estudios);Hombres;    De 31 a 40 años;0;4
+        0221 - Religión y teología;Hombres;    De 31 a 40 años;8;32
+        0222 - Historia y arqueología;Hombres;    De 31 a 40 años;104;59
+        0223 - Filosofía y ética;Hombres;    De 31 a 40 años;51;61
+        0229 - Humanidades (otros estudios);Hombres;    De 31 a 40 años;24;20
+        0231 - Aprendizaje de segundas lenguas;Hombres;    De 31 a 40 años;83;32
+        0232 - Literatura y lingüística;Hombres;    De 31 a 40 años;47;55
+        0239 - Lenguas (otros estudios);Hombres;    De 31 a 40 años;4;7
+        0311 - Economía;Hombres;    De 31 a 40 años;91;93
+        0312 - Ciencias políticas;Hombres;    De 31 a 40 años;75;145
+        0313 - Psicología;Hombres;    De 31 a 40 años;253;122
+        0314 - Sociología, antropología y geografía social y cultural;Hombres;    De 31 a 40 años;257;122
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Hombres;    De 31 a 40 años;0;19
+        0321 - Periodismo y comunicación;Hombres;    De 31 a 40 años;79;74
+        0322 - Biblioteconomía, documentación y archivos;Hombres;    De 31 a 40 años;19;16
+        0329 - Periodismo y documentación (otros estudios);Hombres;    De 31 a 40 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Hombres;    De 31 a 40 años;0;80
+        0412 - Finanzas, banca y seguros;Hombres;    De 31 a 40 años;30;106
+        0413 - Dirección y administración;Hombres;    De 31 a 40 años;689;1482
+        0414 - Marketing y publicidad;Hombres;    De 31 a 40 años;93;73
+        0416 - Ventas al por mayor y al por menor;Hombres;    De 31 a 40 años;12;21
+        0419 - Negocios y administración (otros estudios);Hombres;    De 31 a 40 años;0;12
+        0421 - Derecho;Hombres;    De 31 a 40 años;639;473
+        0511 - Biología;Hombres;    De 31 a 40 años;29;10
+        0512 - Bioquímica;Hombres;    De 31 a 40 años;9;19
+        0519 - Ciencias de la vida (otros estudios);Hombres;    De 31 a 40 años;1;10
+        0521 - Ciencias del medio ambiente;Hombres;    De 31 a 40 años;30;12
+        0522 - Entornos naturales y vida silvestre;Hombres;    De 31 a 40 años;0;12
+        0529 - Medio ambiente (otros estudios);Hombres;    De 31 a 40 años;0;0
+        0531 - Química;Hombres;    De 31 a 40 años;34;18
+        0532 - Ciencias de la Tierra;Hombres;    De 31 a 40 años;30;76
+        0533 - Física;Hombres;    De 31 a 40 años;22;36
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Hombres;    De 31 a 40 años;0;0
+        0541 - Matemáticas;Hombres;    De 31 a 40 años;23;14
+        0542 - Estadística;Hombres;    De 31 a 40 años;7;42
+        0549 - Matemáticas y estadística (otros estudios);Hombres;    De 31 a 40 años;0;3
+        0612 - Diseño y administración de bases de datos y redes;Hombres;    De 31 a 40 años;0;98
+        0613 - Desarrollo y análisis de aplicaciones y de software;Hombres;    De 31 a 40 años;24;187
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Hombres;    De 31 a 40 años;789;108
+        0711 - Ingeniería y procesos químicos;Hombres;    De 31 a 40 años;92;6
+        0712 - Control y tecnología medioambiental;Hombres;    De 31 a 40 años;0;38
+        0713 - Electricidad y energía;Hombres;    De 31 a 40 años;93;122
+        0714 - Electrónica y automática;Hombres;    De 31 a 40 años;570;110
+        0715 - Maquinaria y metalurgia;Hombres;    De 31 a 40 años;550;95
+        0716 - Vehículos de motor, barcos y aeronaves;Hombres;    De 31 a 40 años;111;31
+        0719 - Ingeniería y profesiones afines (otros estudios);Hombres;    De 31 a 40 años;143;96
+        0721 - Industria de la alimentación;Hombres;    De 31 a 40 años;22;39
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Hombres;    De 31 a 40 años;13;6
+        0723 - Industria textil, confección, del calzado y piel;Hombres;    De 31 a 40 años;0;2
+        0724 - Minería y extracción;Hombres;    De 31 a 40 años;44;2
+        0729 - Industria manufacturera y producción (otros estudios);Hombres;    De 31 a 40 años;0;0
+        0731 - Arquitectura y urbanismo;Hombres;    De 31 a 40 años;315;122
+        0732 - Ingeniería civil y de la edificación;Hombres;    De 31 a 40 años;317;55
+        0739 - Arquitectura y construcción (otros estudios);Hombres;    De 31 a 40 años;0;1
+        0811 - Producción agrícola y explotación ganadera;Hombres;    De 31 a 40 años;207;44
+        0812 - Horticultura y jardinería;Hombres;    De 31 a 40 años;31;2
+        0819 - Agricultura y ganadería (otros estudios);Hombres;    De 31 a 40 años;0;1
+        0821 - Silvicultura;Hombres;    De 31 a 40 años;127;6
+        0831 - Pesca;Hombres;    De 31 a 40 años;0;10
+        0841 - Veterinaria;Hombres;    De 31 a 40 años;18;2
+        0911 - Odontología;Hombres;    De 31 a 40 años;40;3
+        0912 - Medicina;Hombres;    De 31 a 40 años;110;240
+        0913 - Enfermería;Hombres;    De 31 a 40 años;183;47
+        0914 - Tecnología de diagnóstico y tratamiento médico;Hombres;    De 31 a 40 años;17;30
+        0915 - Terapia y rehabilitación;Hombres;    De 31 a 40 años;199;102
+        0916 - Farmacia;Hombres;    De 31 a 40 años;44;6
+        0919 - Salud (otros estudios);Hombres;    De 31 a 40 años;0;117
+        0923 - Trabajo social y orientación;Hombres;    De 31 a 40 años;62;56
+        0929 -  Servicios sociales (otros estudios);Hombres;    De 31 a 40 años;0;0
+        1013 - Hostelería;Hombres;    De 31 a 40 años;2;10
+        1014 - Actividades físicas y deportivas;Hombres;    De 31 a 40 años;129;95
+        1015 - Viajes, turismo y ocio;Hombres;    De 31 a 40 años;73;33
+        1019 - Servicios personales (otros estudios);Hombres;    De 31 a 40 años;0;0
+        1022 - Salud y seguridad laboral;Hombres;    De 31 a 40 años;6;585
+        1029 - Saneamiento y seguridad laboral (otros estudios);Hombres;    De 31 a 40 años;0;0
+        1031 - Enseñanza militar;Hombres;    De 31 a 40 años;0;5
+        1032 - Protección de la propiedad y las personas;Hombres;    De 31 a 40 años;19;137
+        1039 - Servicios de seguridad (otros estudios);Hombres;    De 31 a 40 años;0;0
+        1041 - Servicios de transporte;Hombres;    De 31 a 40 años;54;28
+        0111 - Ciencias de la educación;Hombres;    Más de 40 años;25;164
+        0112 - Formación de docentes de enseñanza infantil;Hombres;    Más de 40 años;14;0
+        0113 - Formación de docentes de enseñanza primaria;Hombres;    Más de 40 años;208;9
+        0114 - Formación de docentes de educación secundaria y formación profesional;Hombres;    Más de 40 años;1;872
+        0119 - Educación (otros estudios);Hombres;    Más de 40 años;47;8
+        0211 - Técnicas audiovisuales y medios de comunicación;Hombres;    Más de 40 años;36;26
+        0212 - Diseño de moda e interiorismo;Hombres;    Más de 40 años;7;6
+        0213 - Bellas artes;Hombres;    Más de 40 años;127;21
+        0214 - Conservación, restauración y artesanía;Hombres;    Más de 40 años;2;1
+        0215 - Música y artes del espectáculo;Hombres;    Más de 40 años;4;91
+        0219 - Artes (otros estudios);Hombres;    Más de 40 años;0;0
+        0221 - Religión y teología;Hombres;    Más de 40 años;1;21
+        0222 - Historia y arqueología;Hombres;    Más de 40 años;147;64
+        0223 - Filosofía y ética;Hombres;    Más de 40 años;40;62
+        0229 - Humanidades (otros estudios);Hombres;    Más de 40 años;32;36
+        0231 - Aprendizaje de segundas lenguas;Hombres;    Más de 40 años;55;24
+        0232 - Literatura y lingüística;Hombres;    Más de 40 años;33;20
+        0239 - Lenguas (otros estudios);Hombres;    Más de 40 años;5;2
+        0311 - Economía;Hombres;    Más de 40 años;46;49
+        0312 - Ciencias políticas;Hombres;    Más de 40 años;89;130
+        0313 - Psicología;Hombres;    Más de 40 años;229;75
+        0314 - Sociología, antropología y geografía social y cultural;Hombres;    Más de 40 años;214;91
+        0319 - Ciencias sociales y del comportamiento (otros estudios);Hombres;    Más de 40 años;0;14
+        0321 - Periodismo y comunicación;Hombres;    Más de 40 años;47;27
+        0322 - Biblioteconomía, documentación y archivos;Hombres;    Más de 40 años;16;6
+        0329 - Periodismo y documentación (otros estudios);Hombres;    Más de 40 años;0;0
+        0411 - Contabilidad y gestión de impuestos;Hombres;    Más de 40 años;0;41
+        0412 - Finanzas, banca y seguros;Hombres;    Más de 40 años;9;29
+        0413 - Dirección y administración;Hombres;    Más de 40 años;564;517
+        0414 - Marketing y publicidad;Hombres;    Más de 40 años;22;27
+        0416 - Ventas al por mayor y al por menor;Hombres;    Más de 40 años;3;5
+        0419 - Negocios y administración (otros estudios);Hombres;    Más de 40 años;0;11
+        0421 - Derecho;Hombres;    Más de 40 años;663;430
+        0511 - Biología;Hombres;    Más de 40 años;2;4
+        0512 - Bioquímica;Hombres;    Más de 40 años;2;2
+        0519 - Ciencias de la vida (otros estudios);Hombres;    Más de 40 años;0;2
+        0521 - Ciencias del medio ambiente;Hombres;    Más de 40 años;13;8
+        0522 - Entornos naturales y vida silvestre;Hombres;    Más de 40 años;0;5
+        0529 - Medio ambiente (otros estudios);Hombres;    Más de 40 años;0;0
+        0531 - Química;Hombres;    Más de 40 años;7;9
+        0532 - Ciencias de la Tierra;Hombres;    Más de 40 años;19;27
+        0533 - Física;Hombres;    Más de 40 años;14;25
+        0539 - Ciencias químicas, físicas y geológicas (otros estudios);Hombres;    Más de 40 años;0;0
+        0541 - Matemáticas;Hombres;    Más de 40 años;13;5
+        0542 - Estadística;Hombres;    Más de 40 años;3;27
+        0549 - Matemáticas y estadística (otros estudios);Hombres;    Más de 40 años;0;0
+        0612 - Diseño y administración de bases de datos y redes;Hombres;    Más de 40 años;0;50
+        0613 - Desarrollo y análisis de aplicaciones y de software;Hombres;    Más de 40 años;3;75
+        0619 - Tecnologías de la información y las comunicaciones (otros estudios);Hombres;    Más de 40 años;295;33
+        0711 - Ingeniería y procesos químicos;Hombres;    Más de 40 años;20;0
+        0712 - Control y tecnología medioambiental;Hombres;    Más de 40 años;0;25
+        0713 - Electricidad y energía;Hombres;    Más de 40 años;32;48
+        0714 - Electrónica y automática;Hombres;    Más de 40 años;122;39
+        0715 - Maquinaria y metalurgia;Hombres;    Más de 40 años;148;38
+        0716 - Vehículos de motor, barcos y aeronaves;Hombres;    Más de 40 años;40;10
+        0719 - Ingeniería y profesiones afines (otros estudios);Hombres;    Más de 40 años;90;29
+        0721 - Industria de la alimentación;Hombres;    Más de 40 años;6;10
+        0722 - Industrias de otros materiales (madera, papel, plástico, vidrio);Hombres;    Más de 40 años;6;1
+        0723 - Industria textil, confección, del calzado y piel;Hombres;    Más de 40 años;0;0
+        0724 - Minería y extracción;Hombres;    Más de 40 años;17;5
+        0729 - Industria manufacturera y producción (otros estudios);Hombres;    Más de 40 años;0;0
+        0731 - Arquitectura y urbanismo;Hombres;    Más de 40 años;111;41
+        0732 - Ingeniería civil y de la edificación;Hombres;    Más de 40 años;178;36
+        0739 - Arquitectura y construcción (otros estudios);Hombres;    Más de 40 años;0;1
+        0811 - Producción agrícola y explotación ganadera;Hombres;    Más de 40 años;146;19
+        0812 - Horticultura y jardinería;Hombres;    Más de 40 años;4;5
+        0819 - Agricultura y ganadería (otros estudios);Hombres;    Más de 40 años;0;2
+        0821 - Silvicultura;Hombres;    Más de 40 años;69;0
+        0831 - Pesca;Hombres;    Más de 40 años;0;2
+        0841 - Veterinaria;Hombres;    Más de 40 años;2;2
+        0911 - Odontología;Hombres;    Más de 40 años;9;3
+        0912 - Medicina;Hombres;    Más de 40 años;33;91
+        0913 - Enfermería;Hombres;    Más de 40 años;64;23
+        0914 - Tecnología de diagnóstico y tratamiento médico;Hombres;    Más de 40 años;21;15
+        0915 - Terapia y rehabilitación;Hombres;    Más de 40 años;83;37
+        0916 - Farmacia;Hombres;    Más de 40 años;9;7
+        0919 - Salud (otros estudios);Hombres;    Más de 40 años;0;83
+        0923 - Trabajo social y orientación;Hombres;    Más de 40 años;75;46
+        0929 -  Servicios sociales (otros estudios);Hombres;    Más de 40 años;0;0
+        1013 - Hostelería;Hombres;    Más de 40 años;0;4
+        1014 - Actividades físicas y deportivas;Hombres;    Más de 40 años;31;24
+        1015 - Viajes, turismo y ocio;Hombres;    Más de 40 años;46;11
+        1019 - Servicios personales (otros estudios);Hombres;    Más de 40 años;0;0
+        1022 - Salud y seguridad laboral;Hombres;    Más de 40 años;3;429
+        1029 - Saneamiento y seguridad laboral (otros estudios);Hombres;    Más de 40 años;0;0
+        1031 - Enseñanza militar;Hombres;    Más de 40 años;0;6
+        1032 - Protección de la propiedad y las personas;Hombres;    Más de 40 años;8;133
+        1039 - Servicios de seguridad (otros estudios);Hombres;    Más de 40 años;0;0
+        1041 - Servicios de transporte;Hombres;    Más de 40 años;25;17
