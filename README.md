@@ -15,7 +15,7 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 _PIP_ADDITIONAL_REQUIREMENTS=openpyxl
 ```
 
-3. Crea una subcarpeta dentro de data que se llame `raw`, luego descomprime el archivo comprimido fuentes. Debe quedar asi
+3. En el directorio data/raw puede encontar las fuentes de datos originales:
 ```
 data
 └── raw
@@ -33,4 +33,4 @@ data
 docker compose up airflow-init
 ```
 
-5. Conectate a la base de datos MySQL y ejecuta la migración `create_tables.sql`, la cual puedes encontrar en la tabla migrations
+5. Conectate a la base de datos MySQL y ejecuta la migración `create_tables.sql`, la cual puedes encontrar en la carpeta migrations
