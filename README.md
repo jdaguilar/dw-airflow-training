@@ -3,7 +3,7 @@
 Ejercicio de entrenamiento para poblar un DW por medio de Apache Airflow
 
 
-## 1. Setup
+## Setup
 
 1. Crear archivo `.env` con la variable AIRFLOW_UID
 ```
@@ -15,7 +15,12 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 _PIP_ADDITIONAL_REQUIREMENTS=openpyxl
 ```
 
-3. En el directorio data/raw puede encontar las fuentes de datos originales:
+Si requiere añadir mas librerias, debe editar la variable `_PIP_ADDITIONAL_REQUIREMENTS` separadando las librerias por comas, por ejemplo:
+```
+_PIP_ADDITIONAL_REQUIREMENTS=openpyxl,pandas
+```
+
+3. En el directorio `data/raw` puede encontar las fuentes de datos originales:
 ```
 data
 └── raw
