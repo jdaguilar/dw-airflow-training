@@ -54,5 +54,5 @@ El objetivo del prepocesamiento es transformar los archivos crudos en un archivo
 
 4. Tenga cuidado cuando lea algunos archivos, muchos de ellos contienen un código que puede ser interpretado como entero pero debe ser interpretado como string.
 
-5. No esta de mas agregar que los datos deben tener consistencia, enfoquese especialmente en los archivos correspondientes a españa.
+5. No está de mas agregar que los datos deben tener consistencia, enfoquese especialmente en los archivos correspondientes a españa.
 
