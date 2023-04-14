@@ -56,3 +56,5 @@ El objetivo del prepocesamiento es transformar los archivos crudos en un archivo
 
 5. No está de mas agregar que los datos deben tener consistencia, enfoquese especialmente en los archivos correspondientes a españa.
 
+# Modelo DW
+![dw.png](dw.png)
