@@ -54,13 +54,14 @@ def merge_df(df,df2):
     df_final=df.merge(df2,on=["year","GEO_TIME"])
     return df_final
 
+if __name__ == "__main__":
+    df=transformation(df)
+    df2=transformation(df2)
+    df=merge_df(df,df2)
 
-df=transformation(df)
-df2=transformation(df2)
-df=merge_df(df,df2)
 
-
-sqlEngine, dbConnection=connect_db.db_connector()
-name_table='stage_porcentaje_egresados_internacional'
-connect_db.create_table(df,name_table,dbConnection)
+    sqlEngine, dbConnection=connect_db.db_connector()
+    name_table='stage_porcentaje_egresados_internacional'
+    connect_db.create_table(df,name_table,dbConnection)
+    print("finaliza")
 
