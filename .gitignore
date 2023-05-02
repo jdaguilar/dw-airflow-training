@@ -7,6 +7,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+
+.dw-airflow-training\data\processed\notebooks_test.ipynb
 .Python
 build/
 develop-eggs/
