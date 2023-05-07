@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS dimm_situacion_laboral (
 	desc_situacion_laboral VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS dimm_rango_edad;  --este 
+DROP TABLE IF EXISTS ;;  --este 
 CREATE TABLE IF NOT EXISTS dimm_rango_edad (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_rango_edad VARCHAR(255)
