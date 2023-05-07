@@ -1,6 +1,25 @@
 import pandas as pd
 import mysql.connector
-import connect_db
+from datetime import datetime
+import pytz
+
+#import connect_db
+def execution_date(df) -> pd.DataFrame:
+        """
+        Adds a new column to a pandas DataFrame with the current execution date.
+
+        Returns
+        -------
+        pd.DataFrame
+            The modified DataFrame with a new column called "fecha_ejecucion" containing the execution date.
+        """
+        tz=pytz.timezone("America/Bogota")
+        fecha_actual = datetime.now(tz)
+        fecha_formateada = fecha_actual.strftime("%Y-%m-%d")
+        fecha_formateada=int(fecha_formateada.replace("-",""))
+        df['fecha_ejecucion'] = fecha_formateada
+
+        return df
 
 def transformation(df):
     df=df.iloc[8:,0:5].reset_index(drop=True)
@@ -48,9 +67,11 @@ def transformation(df):
 
     df_concatenado = pd.concat(df_lista)
 
-    df = df_concatenado[(df_concatenado['tipo_universidad'] != 'total') & (df_concatenado['area_estudio'].str.strip() != 'Total')]
+    #df = df_concatenado[(df_concatenado['tipo_universidad'] != 'total') & (df_concatenado['area_estudio'].str.strip() != 'Total')]
+    df=df_concatenado[(df_concatenado['tipo_universidad']!='total') & (df_concatenado['sexo']!='ambos_sexos')]
+    df=df[df['area_estudio'].str.strip()!='Total']
 
-
+    df=execution_date(df)
 
     return df
 
@@ -62,20 +83,18 @@ def pivote(df_concatenado):
 
     # Ordenamos el DataFrame según nuestras especificaciones
     df = df[['anio', 'pais', 'tipo_universidad', 'area_estudio', 'sexo', 'situacion_laboral', 'cantidad']]
-
-
-
+    df=execution_date(df)
 
     return df
 
 
-if __name__ == "__main__":
-    df=pd.read_excel(r"C:\Users\marcelo.diezm_pragma\Documents\reto_airflow\dw-airflow-training\data\raw\03003.xlsx")
-    df=transformation(df)
-    df=pivote(df)
+# if __name__ == "__main__":
+#     df=pd.read_excel(r"C:\Users\marcelo.diezm_pragma\Documents\reto_airflow\dw-airflow-training\data\raw\03003.xlsx")
+#     df=transformation(df)
+#     df=pivote(df)
 
-    sqlEngine, dbConnection=connect_db.db_connector()
-    print(sqlEngine, dbConnection)
-    name_table='stage_situacion_laboral_egresados'
-    connect_db.create_table(df,name_table,dbConnection)
-    print("se hizo")
+#     sqlEngine, dbConnection,_=connect_db.db_connector()
+#     print(sqlEngine, dbConnection)
+#     name_table='stage_situacion_laboral_egresados'
+#     connect_db.create_table(df,name_table,dbConnection)
+#     print("se hizo")

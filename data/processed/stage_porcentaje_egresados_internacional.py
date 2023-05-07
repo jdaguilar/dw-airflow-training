@@ -1,15 +1,28 @@
 
 import pandas as pd
 import mysql.connector
-import connect_db
+import utils.connect_db as connect_db
+from datetime import datetime
+import pytz
+
 #1
 
-df=pd.read_excel(r"C:\Users\marcelo.diezm_pragma\Documents\reto_airflow\dw-airflow-training\data\raw\educ_uoe_grad05.xlsx")
-df2=pd.read_excel(r"C:\Users\marcelo.diezm_pragma\Documents\reto_airflow\dw-airflow-training\data\raw\educ_uoe_grad05.xlsx",sheet_name='Data2')
+def execution_date(df) -> pd.DataFrame:
+        """
+        Adds a new column to a pandas DataFrame with the current execution date.
 
-df['flag']=1
-df2['flag']=2
+        Returns
+        -------
+        pd.DataFrame
+            The modified DataFrame with a new column called "fecha_ejecucion" containing the execution date.
+        """
+        tz=pytz.timezone("America/Bogota")
+        fecha_actual = datetime.now(tz)
+        fecha_formateada = fecha_actual.strftime("%Y-%m-%d")
+        fecha_formateada=int(fecha_formateada.replace("-",""))
+        df['fecha_ejecucion'] = fecha_formateada
 
+        return df
 
 def transformation(df):
     flag=df['flag'][0]
@@ -52,16 +65,5 @@ def transformation(df):
 
 def merge_df(df,df2):
     df_final=df.merge(df2,on=["year","GEO_TIME"])
+    df_final=execution_date(df)
     return df_final
-
-if __name__ == "__main__":
-    df=transformation(df)
-    df2=transformation(df2)
-    df=merge_df(df,df2)
-
-
-    sqlEngine, dbConnection=connect_db.db_connector()
-    name_table='stage_porcentaje_egresados_internacional'
-    connect_db.create_table(df,name_table,dbConnection)
-    print("finaliza")
-
