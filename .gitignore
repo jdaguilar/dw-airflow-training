@@ -29,6 +29,7 @@ share/python-wheels/
 *.egg
 logs/scheduler/latest
 /data/hechos_prueba.ipynb
+./data/hechos_prueba.ipynb
 MANIFEST
 
 # PyInstaller
@@ -80,6 +81,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
+
 
 # IPython
 profile_default/
