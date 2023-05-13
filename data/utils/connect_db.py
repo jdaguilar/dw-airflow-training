@@ -11,7 +11,7 @@ def db_connector():
         dbConnection (sqlalchemy.engine.base.Connection) :Sirve para utilizarlo como conexion y asi, leer informacion de la base datos
     """
     try:
-        cadena_conexion = "mysql+pymysql://root:1234@localhost:3306/pragma"
+        #cadena_conexion = "mysql+pymysql://root:1234@localhost:3306/pragma"
         cadena_conexion = "mysql+pymysql://admin:admin@localhost:3306/dw"
         auth_plugin='mysql_native_password'
         sqlEngine = create_engine(cadena_conexion)

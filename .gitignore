@@ -28,7 +28,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 logs/scheduler/latest
-
+/data/hechos_prueba.ipynb
 MANIFEST
 
 # PyInstaller

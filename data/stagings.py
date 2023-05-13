@@ -92,6 +92,7 @@ def main_staging(files_path):
     dft_1, dft_2, dft_3  = fn_numero_egresados_internacional.transformation(df_1, df_2, df_3)
     
     stage_numero_egresados_internacional = fn_numero_egresados_internacional.merge_df(dft_1, dft_2, dft_3)
+    print(stage_numero_egresados_internacional)
 
     _, dbConnection,_=connect_db.db_connector()
 

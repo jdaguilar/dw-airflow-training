@@ -60,10 +60,13 @@ def transformation(df):
     df = pd.pivot_table(df, values=[value_name], index=['year', 'GEO_TIME'])
 
     df = df.reset_index()
+    df.rename(columns={'GEO_TIME':'country'},inplace=True)
     return df
 
 
 def merge_df(df,df2):
-    df_final=df.merge(df2,on=["year","GEO_TIME"])
-    df_final=execution_date(df)
+    df_final=df.merge(df2,on=["year","country"])
+    df_final=execution_date(df_final)
     return df_final
+
+

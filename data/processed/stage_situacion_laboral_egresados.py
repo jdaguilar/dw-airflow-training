@@ -59,7 +59,7 @@ def transformation(df):
         tipo = tipo_universidad[i % len(tipo_universidad)]
         df_lista[i]['tipo_universidad'] = tipo
         df_lista[i]['anio'] = 2014
-        df_lista[i]['pais'] = 'chile'
+        df_lista[i]['pais'] = 'spain'
 
 
 
