@@ -57,6 +57,66 @@ class Rango_edad(Base):
         self.desc_rango_edad = desc_rango_edad
 
 
+class Tipo_universidad(Base):
+
+    __tablename__ = 'dimm_tipo_universidad'
+   # __table_args__ = {'schema': 'pragma_gsheets'}
+    id = Column(Integer, primary_key=True)
+    desc_tipo_universidad = Column(String, nullable=False)
+
+    def __init__(self,desc_tipo_universidad) -> None:
+        self.desc_tipo_universidad = desc_tipo_universidad
+
+
+class Universidades(Base):
+
+    __tablename__ = 'dimm_universidades'
+   # __table_args__ = {'schema': 'pragma_gsheets'}
+    id = Column(Integer, primary_key=True)
+    nombre_universidad = Column(String, nullable=False)
+    tipo_universidad = Column(String, nullable=False)
+    modalidad = Column(String, nullable=False)
+
+    def __init__(self,
+                 nombre_universidad,
+                 tipo_universidad,
+                 modalidad) -> None:
+        self.nombre_universidad = nombre_universidad
+        self.tipo_universidad = tipo_universidad
+        self.modalidad = modalidad
+
+
+class Rama_enseñanza(Base):
+
+    __tablename__ = 'dimm_rama_enseanza'
+   # __table_args__ = {'schema': 'pragma_gsheets'}
+    id = Column(Integer, primary_key=True)
+    nombre_rama = Column(String, nullable=False)
+
+    def __init__(self, id, nombre_rama) -> None:
+        self.id = id
+        self.nombre_rama = nombre_rama
+
+
+class Ambito_enseñanza(Base):
+
+    __tablename__ = 'dimm_ambito_enseanza'
+   # __table_args__ = {'schema': 'pragma_gsheets'}
+    id = Column(String, primary_key=True)
+    desc_ambito = Column(String, nullable=False)
+    id_rama = Column(String, nullable=False)
+    nombre_rama = Column(String, nullable=False)
+
+    def __init__(self, 
+                 id,
+                 desc_ambito, 
+                 id_rama, 
+                 nombre_rama) -> None:
+        self.id = id
+        self.desc_ambito = desc_ambito
+        self.id_rama = id_rama
+        self.nombre_rama = nombre_rama
+
 #facts
 
 class Fact_international_graduated(Base):
