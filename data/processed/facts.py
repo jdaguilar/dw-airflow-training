@@ -1,9 +1,9 @@
-import utils.connect_db as connect_db
-import processed.stage_egresados_niveles as fn_stage_egresados_niveles
-import processed.stage_porcentaje_egresados_internacional as fn_stage_porcentaje_egresados_internacional
-import processed.stage_situacion_laboral_egresados as fn_stage_situacion_laboral_egresados
+import data.utils.connect_db as connect_db
+import data.processed.stage_egresados_niveles as fn_stage_egresados_niveles
+import data.processed.stage_porcentaje_egresados_internacional as fn_stage_porcentaje_egresados_internacional
+import data.processed.stage_situacion_laboral_egresados as fn_stage_situacion_laboral_egresados
 import pandas as pd
-from utils.models import Pais,Fact_international_graduated,Universidades,Rama_enseñanza,Fact_egresados_rama_enseñanza
+from data.utils.models import Pais,Fact_international_graduated,Universidades,Rama_enseñanza,Fact_egresados_rama_enseñanza
 
 def fact_international_graduated():
 

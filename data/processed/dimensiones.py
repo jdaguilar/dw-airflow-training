@@ -1,7 +1,9 @@
-import utils.connect_db as connect_db
+import data.utils.connect_db as connect_db
+#from data.utils.connect_db import connect_db
 import pandas as pd
 import numpy as np
-from utils.models import *
+from data.utils.models import *
+#from utils.models import *
 from sqlalchemy import text
 
 

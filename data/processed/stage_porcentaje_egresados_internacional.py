@@ -1,7 +1,7 @@
 
 import pandas as pd
 import mysql.connector
-import utils.connect_db as connect_db
+import data.utils.connect_db as connect_db
 from datetime import datetime
 import pytz
 
