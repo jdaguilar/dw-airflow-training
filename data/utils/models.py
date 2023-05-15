@@ -124,7 +124,7 @@ class Fact_international_graduated(Base):
     """
     __tablename__ = 'fact_international_graduated'
    # __table_args__ = {'schema': 'pragma_gsheets'}
-    year = Column(Integer, primary_key=True)
+    year = Column(Integer, nullable=False)
     id_country = Column(Integer, nullable=False)
     num_graduated_male = Column(Integer, primary_key=True)
     num_graduated_female = Column(Integer, primary_key=True)
@@ -152,6 +152,30 @@ class Fact_international_graduated(Base):
 
 
 
+class Fact_egresados_rama_enseñanza(Base):
+    """Class for model declaration ENPS Questions
+    """
+    __tablename__ = 'fact_egresados_rama_enseñanza'
+   # __table_args__ = {'schema': 'pragma_gsheets'}
+    año = Column(Integer, nullable=False)
+    id_pais = Column(Integer, nullable=False)
+    id_universidad = Column(Integer, nullable=False)
+    id_rama_enseñanza = Column(Integer, primary_key=True)
+    num_egresados = Column(Integer, primary_key=True)
+   
+
+    def __init__(self,
+                 año,
+                 id_pais,
+                id_universidad,
+                 id_rama_enseñanza,
+                 num_egresados,
+                 ) -> None:
+        self.año = año
+        self.id_pais = id_pais
+        self.id_rama_enseñanza = id_rama_enseñanza
+        self.num_egresados = num_egresados
+        self.id_universidad = id_universidad
 
 
 # DROP TABLE IF EXISTS fact_egresados_rama_enseñanza;

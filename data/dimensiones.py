@@ -14,13 +14,13 @@ def dimension_pais():
         columns={'nombre_pais': 'nombre_pais_db'})
 
     # read stage_porcentaje_egresados_internacional
-    query = text('SELECT distinct GEO_TIME FROM stage_porcentaje_egresados_internacional')
+    query = text('SELECT distinct country FROM stage_porcentaje_egresados_internacional')
     stage_porcentaje_egresados_internacional = connect_db.get_table_db_staging(
         session, query)
 
     df_dim_pais = stage_porcentaje_egresados_internacional[[
-        'GEO_TIME']].drop_duplicates().reset_index(drop=True)
-    df_dim_pais = df_dim_pais.rename(columns={'GEO_TIME': 'nombre_pais'})
+        'country']].drop_duplicates().reset_index(drop=True)
+    df_dim_pais = df_dim_pais.rename(columns={'country': 'nombre_pais'})
 
     nuevos_paises = pd.merge(df_dim_pais, df_dim_pais_db,
                              left_on='nombre_pais', right_on='nombre_pais_db', how='left')
