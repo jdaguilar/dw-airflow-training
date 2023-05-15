@@ -149,8 +149,8 @@ CREATE TABLE IF NOT EXISTS fact_situacion_laboral_egresados (
 );
 
 DROP TABLE IF EXISTS fact_egresados_rama_enseñanza;
-CREATE TABLE IF NOT EXISTS fact_egresados_rama_enseñanza (
-	año INT NOT NULL,
+CREATE TABLE IF NOT EXISTS dw.fact_egresados_rama_enseanza (
+	year INT NOT NULL,
 	id_pais INT,
     id_universidad INT,
     id_rama_enseñanza INT,

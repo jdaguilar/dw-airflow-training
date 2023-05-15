@@ -96,12 +96,11 @@ def fact_egresados_rama_enseñanza():
     ec_model=[]
     try:
         for index,row in df.iterrows():
-            print(row['id_country'])
             international_graduated=(Fact_egresados_rama_enseñanza(
-                año=row['año'],
+                year=row['año'],
                 id_pais=row['id_country'],
                 id_universidad=row['id_universidad'],
-                id_rama_enseñanza=row['id_rama_enseñanza'],
+                id_rama_enseanza=row['id_rama_enseñanza'],
                 num_egresados=row['num_egresados'])
                 )
             ec_model.append(international_graduated)
