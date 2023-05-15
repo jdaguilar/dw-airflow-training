@@ -72,19 +72,19 @@ CREATE TABLE IF NOT EXISTS stage_ramas_conocimiento (
 
 -- Dimmensional Tables
 
-DROP TABLE IF EXISTS dimm_pais;   --este
+DROP TABLE IF EXISTS dimm_pais;   
 CREATE TABLE IF NOT EXISTS dimm_pais (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	nombre_pais VARCHAR(255) NOT NULL
 );
 
-DROP TABLE IF EXISTS dimm_sexo;  --este
+DROP TABLE IF EXISTS dimm_sexo;  
 CREATE TABLE IF NOT EXISTS dimm_sexo (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_sexo VARCHAR(255) NOT NULL
 );
 
-DROP TABLE IF EXISTS dimm_tipo_universidad; --este 
+DROP TABLE IF EXISTS dimm_tipo_universidad;  
 CREATE TABLE IF NOT EXISTS dimm_tipo_universidad (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_tipo_universidad VARCHAR(255)
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS dimm_situacion_laboral (
 	desc_situacion_laboral VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS ;;  --este 
+DROP TABLE IF EXISTS ;
 CREATE TABLE IF NOT EXISTS dimm_rango_edad (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_rango_edad VARCHAR(255)
