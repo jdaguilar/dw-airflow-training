@@ -7,12 +7,11 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from helpers import preprocesar_archivo_situacion_laboral, cargar_archivo_situacion_laboral
-#from data.processed.stagings import * 
-import data.processed.stagings as stagings
+
+import staging  
 
 
-
-
+#import data.processed.stagings as stagings
 
 
 DATA_DIRECTORY = "/tmp/data/raw/"
@@ -30,7 +29,7 @@ with workflow:
 
     staging_tables = PythonOperator(
         task_id="insertar_data_stagings",
-        python_callable=stagings.main_staging
+        python_callable=staging.main_staging
         # op_kwargs=dict(
         #     file=FILE,
         #     directory=DATA_DIRECTORY,
