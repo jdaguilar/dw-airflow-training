@@ -137,20 +137,10 @@ CREATE TABLE IF NOT EXISTS fact_international_graduated (
 	percentage_youth_graduated FLOAT
 );
 
-DROP TABLE IF EXISTS fact_situacion_laboral_egresados;
-CREATE TABLE IF NOT EXISTS fact_situacion_laboral_egresados (
-	año INT NOT NULL,
-	id_pais INT,
-    id_tipo_universidad INT,
-    id_area_estudio VARCHAR(255),
-    id_sexo INT,
-    id_situacion_laboral INT,
-	cantidad INT
-);
 
 DROP TABLE IF EXISTS fact_egresados_rama_enseñanza;
-CREATE TABLE IF NOT EXISTS dw.fact_egresados_rama_enseanza (
-	year INT NOT NULL,
+CREATE TABLE IF NOT EXISTS fact_egresados_rama_enseñanza (
+	año INT NOT NULL,
 	id_pais INT,
     id_universidad INT,
     id_rama_enseñanza INT,
@@ -159,7 +149,7 @@ CREATE TABLE IF NOT EXISTS dw.fact_egresados_rama_enseanza (
 
 DROP TABLE IF EXISTS fact_egresados_niveles;
 CREATE TABLE IF NOT EXISTS fact_egresados_niveles (
-	año INT NOT NULL,
+	year INT NOT NULL,
 	id_pais INT,
     id_ambito VARCHAR(255),
     id_sexo INT,
@@ -167,4 +157,15 @@ CREATE TABLE IF NOT EXISTS fact_egresados_niveles (
     num_egresados_nivel_1 INT,
     num_egresados_nivel_2 INT,
     num_egresados INT
+);
+
+DROP TABLE IF EXISTS fact_situacion_laboral_egresados;
+CREATE TABLE IF NOT EXISTS fact_situacion_laboral_egresados (
+	year INT NOT NULL,
+	id_pais INT,
+    id_tipo_universidad INT,
+    id_area_estudio VARCHAR(255),
+    id_sexo INT,
+    id_situacion_laboral INT,
+	cantidad INT
 );
