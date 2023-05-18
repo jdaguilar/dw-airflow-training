@@ -1,5 +1,4 @@
 import pandas as pd
-import data.utils.connect_db as connect_db
 from datetime import datetime
 import pytz
 

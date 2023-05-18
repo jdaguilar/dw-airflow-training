@@ -1,9 +1,13 @@
-import data.utils.connect_db as connect_db
-#from data.utils.connect_db import connect_db
+import sys
+import os
+myDir = os.path.dirname(os.path.abspath(__file__))
+parentDir = os.path.split(myDir)[0]
+sys.path.append(parentDir)
+
 import pandas as pd
 import numpy as np
-from data.utils.models import *
-#from utils.models import *
+from  utils import connect_db
+from utils.models import *
 from sqlalchemy import text
 
 
@@ -28,22 +32,22 @@ def dimension_pais():
                              left_on='nombre_pais', right_on='nombre_pais_db', how='left')
     nuevos_paises = nuevos_paises[nuevos_paises['nombre_pais_db'].isnull()].drop([
         'nombre_pais_db'], axis=1)
-    print(len(nuevos_paises))
-    # pensarlo mejor
+
+
     ec_model = []
     try:
         for index, row in nuevos_paises.iterrows():
-            print(row)
+
             pais = (Pais(
                 nombre_pais=row['nombre_pais']))
             ec_model.append(pais)
-            print("pasa por aca")
+ 
 
         # Insertar los objetos Project en la base de datos utilizando bulk_save_objects()
         session.bulk_save_objects(ec_model)
         # Confirmar la transacción
         session.commit()
-        print('se guarda los datos')
+
     except Exception as e:
         print(e)
         session.rollback()
@@ -80,7 +84,6 @@ def dimension_sexo():
             sexo = Sexo(
                 desc_sexo=row['desc_sexo_staging'])
             ec_model.append(sexo)
-        print("pasa por aca")
 
         # Insertar los objetos Project en la base de datos utilizando bulk_save_objects()
         session.bulk_save_objects(ec_model)
@@ -114,7 +117,7 @@ def dimm_situacion_laboral():
                                         left_on='desc_situacion_laboral_staging', right_on='desc_situacion_laboral_dim', how='left')
     nuevos_situacion_laboral = nuevos_situacion_laboral[nuevos_situacion_laboral['desc_situacion_laboral_dim'].isnull()].drop([
         'desc_situacion_laboral_dim'], axis=1)
-    print(nuevos_situacion_laboral)
+
     ec_model = []
     try:
         for index, row in nuevos_situacion_laboral.iterrows():
@@ -122,7 +125,6 @@ def dimm_situacion_laboral():
             situacion_laboral = Situacion_laboral(
                 desc_situacion_laboral=row['desc_situacion_laboral_staging'])
             ec_model.append(situacion_laboral)
-        print("pasa por aca")
 
         # Insertar los objetos Project en la base de datos utilizando bulk_save_objects()
         session.bulk_save_objects(ec_model)
@@ -155,7 +157,7 @@ def dimm_rango_edad():
                              left_on='edad_staging', right_on='desc_rango_edad_dim', how='left')
     nuevas_edades = nuevas_edades[nuevas_edades['desc_rango_edad_dim'].isnull()].drop(
         ['desc_rango_edad_dim'], axis=1)
-    print(nuevas_edades)
+
     ec_model = []
     try:
         for index, row in nuevas_edades.iterrows():
@@ -163,7 +165,6 @@ def dimm_rango_edad():
             situacion_laboral = Rango_edad(
                 desc_rango_edad=row['edad_staging'])
             ec_model.append(situacion_laboral)
-        print("pasa por aca")
 
         # Insertar los objetos Project en la base de datos utilizando bulk_save_objects()
         session.bulk_save_objects(ec_model)
@@ -375,6 +376,6 @@ def main():
     dimm_universidades()
     dimm_rama_enseñanza()
     dimm_ambito_enseñanza()
-
+    print("Finalizado con exito!")
 
 main()

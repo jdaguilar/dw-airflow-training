@@ -1,6 +1,4 @@
-import mysql.connector
 from sqlalchemy import create_engine
-from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
 def db_connector():
@@ -12,19 +10,19 @@ def db_connector():
     """
     try:
         #cadena_conexion = "mysql+pymysql://root:1234@localhost:3306/pragma"
-        cadena_conexion = "mysql+pymysql://admin:admin@localhost:3306/dw"
+        cadena_conexion = "mysql://admin:admin@172.18.0.8:3306/dw"
         auth_plugin='mysql_native_password'
         sqlEngine = create_engine(cadena_conexion)
         dbConnection = sqlEngine.connect()
         Session = sessionmaker(bind=sqlEngine)
         session = Session()
-        print(dbConnection)
+
     except BaseException as e :
         print(e)
         sqlEngine=None
         dbConnection=None
         session=None
-        print("No se conectò")
+        print("No se conecto")
     return sqlEngine, dbConnection,session
 
 def create_table(df,name_table,dbConnection):

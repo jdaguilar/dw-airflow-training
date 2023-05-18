@@ -1,17 +1,22 @@
-import data.utils.connect_db as connect_db
-#from data.processed.stage_egresados_niveles import *
-import data.processed.stage_egresados_niveles as fn_stage_egresados_niveles
-import data.processed.stage_porcentaje_egresados_internacional as fn_stage_porcentaje_egresados_internacional
-import data.processed.stage_situacion_laboral_egresados as fn_stage_situacion_laboral_egresados
-import data.processed.stage_ramas_conocimiento as fn_stage_ramas_conocimiento
-import data.processed.stage_egresados_universidad as fn_stage_egresados_universidad
-import data.processed.stage_numero_egresados_internacional as fn_numero_egresados_internacional
+import sys
+import os
+myDir = os.path.dirname(os.path.abspath(__file__))
+parentDir = os.path.split(myDir)[0]
+sys.path.append(parentDir)
+
+import utils.connect_db as connect_db
+import processed.stage_egresados_niveles as fn_stage_egresados_niveles
+import processed.stage_porcentaje_egresados_internacional as fn_stage_porcentaje_egresados_internacional
+import processed.stage_situacion_laboral_egresados as fn_stage_situacion_laboral_egresados
+import processed.stage_ramas_conocimiento as fn_stage_ramas_conocimiento
+import processed.stage_egresados_universidad as fn_stage_egresados_universidad
+import processed.stage_numero_egresados_internacional as fn_numero_egresados_internacional
 
 import os
 
 
 import pandas as pd
-from data.utils.models import Pais
+from utils.models import Pais
 
 def main_staging(files_path):
 
@@ -39,7 +44,7 @@ def main_staging(files_path):
     _, dbConnection,_=connect_db.db_connector()
     name_table='stage_porcentaje_egresados_internacional'
     connect_db.create_table(stage_porcentaje_egresados_internacional,name_table,dbConnection)
-    print("finaliza")
+
 
     '''
     stage_situacion_laboral_egresados
@@ -52,8 +57,6 @@ def main_staging(files_path):
     _, dbConnection,_=connect_db.db_connector()
     name_table='stage_situacion_laboral_egresados'
     connect_db.create_table(stage_situacion_laboral_egresados,name_table,dbConnection)
-    print("se hizo")
-    print(stage_porcentaje_egresados_internacional.columns)
 
     '''
     stage_ramas_conocimiento
@@ -93,7 +96,7 @@ def main_staging(files_path):
     dft_1, dft_2, dft_3  = fn_numero_egresados_internacional.transformation(df_1, df_2, df_3)
     
     stage_numero_egresados_internacional = fn_numero_egresados_internacional.merge_df(dft_1, dft_2, dft_3)
-    print(stage_numero_egresados_internacional)
+
 
     _, dbConnection,_=connect_db.db_connector()
 

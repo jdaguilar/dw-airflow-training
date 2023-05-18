@@ -1,16 +1,23 @@
-import data.utils.connect_db as connect_db
+import sys
+import os
+myDir = os.path.dirname(os.path.abspath(__file__))
+parentDir = os.path.split(myDir)[0]
+sys.path.append(parentDir)
+
+from  utils import connect_db
 import pandas as pd
-from data.utils.models import Pais,Fact_international_graduated,Universidades,Rama_enseñanza,Fact_egresados_rama_enseñanza
+from utils.models import *
 from sqlalchemy import text
 
 def fact_international_graduated():
 
     sqlEngine, _,session=connect_db.db_connector()
     #read stage_porcentaje_egresados_internacional
-    query='SELECT * FROM stage_porcentaje_egresados_internacional'
+
+    query = text('SELECT * FROM stage_porcentaje_egresados_internacional')
     stage_porcentaje_egresados_internacional=connect_db.get_table_db_staging(session,query)
 
-    query='SELECT * from  stage_numero_egresados_internacional'
+    query = text('SELECT * from  stage_numero_egresados_internacional')
     stage_numero_egresados_internacional=connect_db.get_table_db_staging(session,query)
 
     query = session.query(Pais)
@@ -48,7 +55,7 @@ def fact_international_graduated():
         session.bulk_save_objects(ec_model)
         # Confirmar la transacción
         session.commit()
-        print('se guarda los datos')
+
     except Exception as e:
         print(e)
         session.rollback()
@@ -75,7 +82,7 @@ def fact_egresados_rama_enseñanza():
 
     sqlEngine, dbConnection,session=connect_db.db_connector()
     #read stage_porcentaje_egresados_internacional
-    query='SELECT * FROM stage_egresados_universidad'
+    query=text('SELECT * FROM stage_egresados_universidad')
     stage_egresados_universidad=connect_db.get_table_db_staging(session,query)
 
     df=pd.merge(stage_egresados_universidad,df_dim_pais_db,left_on='pais',right_on='country').drop(['pais','country','index'],axis=1)
@@ -101,7 +108,7 @@ def fact_egresados_rama_enseñanza():
         session.bulk_save_objects(ec_model)
             # Confirmar la transacción
         session.commit()
-        print('se guarda los datos')
+
     except Exception as e:
         print(e)
         session.rollback()
