@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS fact_international_graduated (
 
 DROP TABLE IF EXISTS fact_egresados_rama_enseñanza;
 CREATE TABLE IF NOT EXISTS fact_egresados_rama_enseñanza (
-	año INT NOT NULL,
+	year INT NOT NULL,
 	id_pais INT,
     id_universidad INT,
     id_rama_enseñanza INT,
