@@ -10,7 +10,8 @@ def db_connector():
     """
     try:
         #cadena_conexion = "mysql+pymysql://root:1234@localhost:3306/pragma"
-        cadena_conexion = "mysql://admin:admin@172.18.0.8:3306/dw"
+        #cadena_conexion = "mysql://admin:admin@172.18.0.8:3306/dw"
+        cadena_conexion = "mysql://admin:admin@localhost:3306/dw"
         auth_plugin='mysql_native_password'
         sqlEngine = create_engine(cadena_conexion)
         dbConnection = sqlEngine.connect()
