@@ -1,26 +1,10 @@
+from airflow.hooks.mysql_hook import MySqlHook
 import pandas as pd
-from datetime import datetime
-import pytz
 
-#import connect_db
-def execution_date(df) -> pd.DataFrame:
-        """
-        Adds a new column to a pandas DataFrame with the current execution date.
+def preprocesar_archivo_situacion_laboral_egresados(file: str,directory: str):
 
-        Returns
-        -------
-        pd.DataFrame
-            The modified DataFrame with a new column called "fecha_ejecucion" containing the execution date.
-        """
-        tz=pytz.timezone("America/Bogota")
-        fecha_actual = datetime.now(tz)
-        fecha_formateada = fecha_actual.strftime("%Y-%m-%d")
-        fecha_formateada=int(fecha_formateada.replace("-",""))
-        df['fecha_ejecucion'] = fecha_formateada
-
-        return df
-
-def transformation(df):
+    #Preprocesar archivo situacion_laboral_egresados
+    df=pd.read_excel(directory + file)
     df=df.iloc[8:,0:5].reset_index(drop=True)
     df.columns = ["area_estudio","cantidad_total","trabajando","desempleo","inactivo"]
 
@@ -30,17 +14,17 @@ def transformation(df):
         if pd.isnull(df.loc[i, 'trabajando']):
             dfs.append(df.iloc[start:i,:])
             start = i + 1
+
     dfs.append(df.iloc[start:,:])
 
     df_lista=[]
+
     # Iterar a través de la lista
     for i in range(len(dfs)):
         # Comprobar la longitud del dataframe
         if len(dfs[i])> 0:
             # Eliminar el dataframe de la lista
             df_lista.append(dfs[i])
-
-
 
     #para el primer df
     column_general=["ambos_sexos","hombres","mujeres"]
@@ -60,40 +44,31 @@ def transformation(df):
         df_lista[i]['anio'] = 2014
         df_lista[i]['pais'] = 'spain'
 
-
-
     #unir los dfs
-
     df_concatenado = pd.concat(df_lista)
 
     #df = df_concatenado[(df_concatenado['tipo_universidad'] != 'total') & (df_concatenado['area_estudio'].str.strip() != 'Total')]
     df=df_concatenado[(df_concatenado['tipo_universidad']!='total') & (df_concatenado['sexo']!='ambos_sexos')]
-    df=df[df['area_estudio'].str.strip()!='Total']
+    df_concatenado=df[df['area_estudio'].str.strip()!='Total']
 
-    df=execution_date(df)
-
-    return df
-
-def pivote(df_concatenado):
     # Realizamos el pivoteo
     df = pd.melt(df_concatenado, id_vars=['area_estudio', 'cantidad_total', 'sexo', 'tipo_universidad', 'anio', 'pais'],
                 value_vars=['trabajando', 'desempleo', 'inactivo'],
                 var_name='situacion_laboral', value_name='cantidad')
 
     # Ordenamos el DataFrame según nuestras especificaciones
-    df = df[['anio', 'pais', 'tipo_universidad', 'area_estudio', 'sexo', 'situacion_laboral', 'cantidad']]
-    df=execution_date(df)
+    df_final = df[['anio', 'pais', 'tipo_universidad', 'area_estudio', 'sexo', 'situacion_laboral', 'cantidad']]
 
-    return df
+    df_final.to_csv("/tmp/data/processed/situacion_laboral.csv", index=False)
+    print("Archivo generado exitosamente.")
 
 
-# if __name__ == "__main__":
-#     df=pd.read_excel(r"C:\Users\marcelo.diezm_pragma\Documents\reto_airflow\dw-airflow-training\data\raw\03003.xlsx")
-#     df=transformation(df)
-#     df=pivote(df)
+def cargar_archivo_situacion_laboral_egresados():
 
-#     sqlEngine, dbConnection,_=connect_db.db_connector()
-#     print(sqlEngine, dbConnection)
-#     name_table='stage_situacion_laboral_egresados'
-#     connect_db.create_table(df,name_table,dbConnection)
-#     print("se hizo")
+    df = pd.read_csv("/tmp/data/processed/situacion_laboral.csv", encoding ='latin-1', delimiter=',')
+
+    mysql_hook = MySqlHook(mysql_conn_id='mysql_conn')
+
+    mysql_hook.insert_rows(table='stage_situacion_laboral_egresados', rows=df.values.tolist())
+
+    print("Datos insertados exitosamente.")
