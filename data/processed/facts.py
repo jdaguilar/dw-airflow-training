@@ -6,7 +6,7 @@ sys.path.append(parentDir)
 
 from  utils import connect_db
 import pandas as pd
-from utils.models import *
+from dags.helpers.models import *
 from sqlalchemy import text
 
 def fact_international_graduated():
