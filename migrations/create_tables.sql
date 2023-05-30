@@ -72,19 +72,19 @@ CREATE TABLE IF NOT EXISTS stage_ramas_conocimiento (
 
 -- Dimmensional Tables
 
-DROP TABLE IF EXISTS dimm_pais;
+DROP TABLE IF EXISTS dimm_pais;   
 CREATE TABLE IF NOT EXISTS dimm_pais (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	nombre_pais VARCHAR(255) NOT NULL
 );
 
-DROP TABLE IF EXISTS dimm_sexo;
+DROP TABLE IF EXISTS dimm_sexo;  
 CREATE TABLE IF NOT EXISTS dimm_sexo (
-	id INTEGER PRIMARY KEY,
+	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_sexo VARCHAR(255) NOT NULL
 );
 
-DROP TABLE IF EXISTS dimm_tipo_universidad;
+DROP TABLE IF EXISTS dimm_tipo_universidad;  
 CREATE TABLE IF NOT EXISTS dimm_tipo_universidad (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_tipo_universidad VARCHAR(255)
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS dimm_universidades (
 
 DROP TABLE IF EXISTS dimm_rama_enseñanza;
 CREATE TABLE IF NOT EXISTS dimm_rama_enseñanza (
-	id INTEGER PRIMARY KEY,
+	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	nombre_rama VARCHAR(255)
 );
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS dimm_situacion_laboral (
 	desc_situacion_laboral VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS dimm_rango_edad;
+DROP TABLE IF EXISTS ;
 CREATE TABLE IF NOT EXISTS dimm_rango_edad (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	desc_rango_edad VARCHAR(255)
@@ -137,20 +137,10 @@ CREATE TABLE IF NOT EXISTS fact_international_graduated (
 	percentage_youth_graduated FLOAT
 );
 
-DROP TABLE IF EXISTS fact_situacion_laboral_egresados;
-CREATE TABLE IF NOT EXISTS fact_situacion_laboral_egresados (
-	año INT NOT NULL,
-	id_pais INT,
-    id_tipo_universidad INT,
-    id_area_estudio VARCHAR(255),
-    id_sexo INT,
-    id_situacion_laboral INT,
-	cantidad INT
-);
 
 DROP TABLE IF EXISTS fact_egresados_rama_enseñanza;
 CREATE TABLE IF NOT EXISTS fact_egresados_rama_enseñanza (
-	año INT NOT NULL,
+	year INT NOT NULL,
 	id_pais INT,
     id_universidad INT,
     id_rama_enseñanza INT,
@@ -159,7 +149,7 @@ CREATE TABLE IF NOT EXISTS fact_egresados_rama_enseñanza (
 
 DROP TABLE IF EXISTS fact_egresados_niveles;
 CREATE TABLE IF NOT EXISTS fact_egresados_niveles (
-	año INT NOT NULL,
+	year INT NOT NULL,
 	id_pais INT,
     id_ambito VARCHAR(255),
     id_sexo INT,
@@ -167,4 +157,15 @@ CREATE TABLE IF NOT EXISTS fact_egresados_niveles (
     num_egresados_nivel_1 INT,
     num_egresados_nivel_2 INT,
     num_egresados INT
+);
+
+DROP TABLE IF EXISTS fact_situacion_laboral_egresados;
+CREATE TABLE IF NOT EXISTS fact_situacion_laboral_egresados (
+	year INT NOT NULL,
+	id_pais INT,
+    id_tipo_universidad INT,
+    id_area_estudio VARCHAR(255),
+    id_sexo INT,
+    id_situacion_laboral INT,
+	cantidad INT
 );
