@@ -3,7 +3,7 @@ import pandas as pd
 
 def preprocesar_archivo_situacion_laboral_egresados(file: str,directory: str):
 
-    #Preprocesar archivo situacion_laboral_egresados
+    #Preprocesar archivo situacion_laboral_egresados 03003.xlsx
     df=pd.read_excel(directory + file)
     df=df.iloc[8:,0:5].reset_index(drop=True)
     df.columns = ["area_estudio","cantidad_total","trabajando","desempleo","inactivo"]

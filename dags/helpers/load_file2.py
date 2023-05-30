@@ -4,7 +4,8 @@ import pandas as pd
 
 def preprocesar_archivo_egresados_niveles(file: str,directory: str):
 
-    #Preprocesar archivos egresados niveles
+    #Preprocesar archivos egresados niveles grad_5sc.csv
+
     df=pd.read_csv(directory + file, encoding='latin-1', delimiter=';')
     cod_ambito_ambito=df['COD_AMBITO'].str.split("-",n=1,expand=True)
     df['COD_AMBITO']=cod_ambito_ambito[0]

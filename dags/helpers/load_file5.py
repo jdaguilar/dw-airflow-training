@@ -3,7 +3,7 @@ import pandas as pd
 
 def preprocesar_archivo_ramas_conocimiento(file: str,directory: str):
 
-    #Preprocesar archivo stage_ramas_conocimiento
+    #Preprocesar archivo ramas_conocimiento ISCED_2013.csv
 
     df = pd.read_csv(directory + file, encoding='latin-1', delimiter=';')
 

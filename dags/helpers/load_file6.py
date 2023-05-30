@@ -3,7 +3,7 @@ import pandas as pd
 
 def preprocesar_archivo_num_egresados_inter(file: str,directory: str):
 
-    #Preprocesar archivo stage_ramas_conocimiento educ_uoe_grad01.xlsx
+    #Preprocesar archivo num_egresados_inter educ_uoe_grad01.xlsx
 
     df_1 = pd.read_excel(directory + file, sheet_name='Data', skiprows=11, nrows=13)
     df_2 = pd.read_excel(directory + file, sheet_name='Data2', skiprows=11, nrows=13)
