@@ -21,16 +21,17 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.mysql_operator import MySqlOperator
-from helpers import cargar_archivo_egresados_internacional, preprocesar_archivo_egresados_internacional
+from helpers import preprocesar_archivo_situacion_laboral_egresados, cargar_archivo_situacion_laboral_egresados
 from datetime import timedelta
 
 DATA_DIRECTORY = "/tmp/data/raw/"
-FILE1 = 'educ_uoe_grad05.xlsx'
+FILE1 = '03003.xlsx'
+
 
 def create_dag_for_import():
-
+        
     workflow = DAG(
-        "dag_cargar_stage_egresados_internacional_V1",
+        "dag_cargar_stage_situacion_laboral_v2",
         schedule_interval=None,
         start_date=datetime(2023, 5, 20),
         tags=['dw-training'],
@@ -40,14 +41,14 @@ def create_dag_for_import():
     with workflow:
 
         borrar_tabla_mysql = MySqlOperator(
-            task_id='borrar_tabla_dw_stage_egresados_inter',
+            task_id='borrar_tabla_dw_stage_situacion_laboral_egresados_22',
             mysql_conn_id='mysql_conn', 
-            sql='DELETE FROM stage_numero_egresados_internacional'
+            sql='DELETE FROM stage_situacion_laboral_egresados'
         )
-        
+
         preprocessing_task = PythonOperator(
-            task_id="preprocesar_archivo_egresados_internacional",
-            python_callable=preprocesar_archivo_egresados_internacional,
+            task_id="preprocesar_archivo_situacion_laboral_egresados",
+            python_callable=preprocesar_archivo_situacion_laboral_egresados,
             op_kwargs=dict(
                 file=FILE1,
                 directory=DATA_DIRECTORY,
@@ -55,12 +56,12 @@ def create_dag_for_import():
         )
 
         upload_task = PythonOperator(
-            task_id="cargar_archivo_egresados_internacional",
-            python_callable=cargar_archivo_egresados_internacional
+            task_id="cargar_archivo_situacion_laboral",
+            python_callable=cargar_archivo_situacion_laboral_egresados
         )
 
         borrar_tabla_mysql >> preprocessing_task >> upload_task
-
+        
     return workflow
 
 dag = create_dag_for_import()
