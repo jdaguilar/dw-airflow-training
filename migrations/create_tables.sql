@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS dimm_universidades (
 
 DROP TABLE IF EXISTS dimm_rama_enseñanza;
 CREATE TABLE IF NOT EXISTS dimm_rama_enseñanza (
-	id INTEGER PRIMARY KEY,
+	id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	nombre_rama VARCHAR(255)
 );
 
