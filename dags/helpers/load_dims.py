@@ -123,20 +123,13 @@ def cargar_dimm_rango_edad():
     nuevas_edades = pd.merge(stage_rango_edad, df_dim_rango_edad_db, left_on='edad_staging', right_on='desc_rango_edad_dim', how='left')
     nuevas_edades = nuevas_edades[nuevas_edades['desc_rango_edad_dim'].isnull()].drop(['desc_rango_edad_dim'], axis=1)
 
-    ec_model = []
-    try:
-        for index, row in nuevas_edades.iterrows():
-            situacion_laboral = {'desc_rango_edad': row['edad_staging']}
-            ec_model.append(situacion_laboral)
+    # Prepare the data for insertion
+    data_to_insert = [(value,) for value in nuevas_edades['edad_staging'].values.tolist()]
 
-        # Insert the rows into the table
-        mysql_hook.insert_rows(table='dimm_rango_edad', rows=ec_model)
-
-        logging.info("Data loaded successfully!")
-
-    except Exception as e:
-        logging.error("Error occurred during data loading: %s", str(e))
-
+    # Insert the rows into the table
+    mysql_hook.insert_rows(table='dimm_rango_edad', rows=data_to_insert, target_fields=['desc_rango_edad'])
+    
+    logging.info("Datos cargados de manera exitosa!")
 
 def cargar_dimm_tipo_universidad():
 
@@ -165,19 +158,13 @@ def cargar_dimm_tipo_universidad():
     nuevos_tipos = nuevos_tipos[nuevos_tipos['desc_tipo_universidad_dim'].isnull()].drop(
         ['desc_tipo_universidad_dim'], axis=1)
 
-    ec_model = []
-    try:
-        for index, row in nuevos_tipos.iterrows():
-            tipo_uni = {'desc_tipo_universidad': row['desc_tipo_universidad_staging']}
-            ec_model.append(tipo_uni)
+    # Prepare the data for insertion
+    data_to_insert = [(value,) for value in nuevos_tipos['desc_tipo_universidad_staging'].values.tolist()]
 
-        # Insert the rows into the table
-        mysql_hook.insert_rows(table='dimm_tipo_universidad', rows=ec_model)
-
-        logging.info("Data loaded successfully!")
-    except Exception as e:
-        logging.error("Error occurred during data loading: %s", str(e))
-
+    # Insert the rows into the table
+    mysql_hook.insert_rows(table='dimm_tipo_universidad', rows=data_to_insert, target_fields=['desc_tipo_universidad'])
+    
+    logging.info("Datos cargados de manera exitosa!")
 
 
 def cargar_dimm_universidades():
@@ -207,23 +194,13 @@ def cargar_dimm_universidades():
 
     nuevos_uni = nuevos_uni[nuevos_uni['nombre_universidad_dim'].isnull()].drop(['nombre_universidad_dim'], axis=1)
 
-    ec_model = []
+    # Prepare the data for insertion
+    data_to_insert = [(value) for value in nuevos_uni[['nombre_universidad_staging', 'tipo_universidad', 'modalidad']].values.tolist()]
 
-    try:
-        for index, row in nuevos_uni.iterrows():
-            universidad = {
-                'nombre_universidad': row['nombre_universidad_staging'],
-                'tipo_universidad': row['tipo_universidad'],
-                'modalidad': row['modalidad']
-            }
-            ec_model.append(universidad)
-
-        # Insert the rows into the table
-        mysql_hook.insert_rows(table='dimm_universidades', rows=ec_model)
-
-        logging.info("Data loaded successfully!")
-    except Exception as e:
-        logging.error("Error occurred during data loading: %s", str(e))
+    # Insert the rows into the table
+    mysql_hook.insert_rows(table='dimm_universidades', rows=data_to_insert, target_fields=['nombre_universidad', 'tipo_universidad', 'modalidad'])
+    
+    logging.info("Datos cargados de manera exitosa!")
 
 
 def cargar_dimm_rama_enseñanza():
@@ -254,21 +231,13 @@ def cargar_dimm_rama_enseñanza():
     nuevos_ramas = nuevos_ramas[nuevos_ramas['nombre_rama_dim'].isnull()].drop(
         ['nombre_rama_dim'], axis=1)
 
-    ec_model = []
-    try:
-        for index, row in nuevos_ramas.iterrows():
-            rama_con = {
-                'id': index + 1, # type: ignore
-                'nombre_rama': row['nombre_rama_staging']
-            }
-            ec_model.append(rama_con)
+    # Prepare the data for insertion
+    data_to_insert = [(value,) for value in nuevos_ramas['nombre_rama_staging'].values.tolist()]
 
-        # Insert the rows into the table
-        mysql_hook.insert_rows(table='dimm_rama_enseanza', rows=ec_model)
-
-        logging.info("Data loaded successfully!")
-    except Exception as e:
-        logging.error("Error occurred during data loading: %s", str(e))
+    # Insert the rows into the table
+    mysql_hook.insert_rows(table='dimm_rama_enseanza', rows=data_to_insert, target_fields=['nombre_rama'])
+    
+    logging.info("Datos cargados de manera exitosa!")
 
 
 def cargar_dimm_ambito_enseñanza():
@@ -296,23 +265,12 @@ def cargar_dimm_ambito_enseñanza():
     nuevos_ambitos = pd.merge(df_dim_nombre_rama, df_dim_rama_db,
                               left_on='nombre_ambito_staging', right_on='desc_ambito_dim', how='left')
 
-    nuevos_ambitos = nuevos_ambitos[nuevos_ambitos['desc_ambito_dim'].isnull()].drop(
-        ['desc_ambito_dim'], axis=1)
+    nuevos_ambitos = nuevos_ambitos[nuevos_ambitos['desc_ambito_dim'].isnull()].drop(['desc_ambito_dim'], axis=1)
 
-    ec_model = []
-    try:
-        for index, row in nuevos_ambitos.iterrows():
-            rama_con = {
-                'id': '0' + str(row['codigo_rama_4']) if len(str(row['codigo_rama_4'])) <= 3 else str(row['codigo_rama_4']),
-                'desc_ambito': row['nombre_ambito_staging'],
-                'id_rama': row['codigo_rama_1'],
-                'nombre_rama': row['nombre_rama_1']
-            }
-            ec_model.append(rama_con)
+    # Prepare the data for insertion
+    data_to_insert = [(value) for value in nuevos_ambitos[['codigo_rama_4', 'nombre_ambito_staging', 'codigo_rama_1', 'nombre_rama_1']].values.tolist()]
 
-        # Insert the rows into the table
-        mysql_hook.insert_rows(table='dimm_ambito_enseanza', rows=ec_model)
-
-        logging.info("Data loaded successfully!")
-    except Exception as e:
-        logging.error("Error occurred during data loading: %s", str(e))
+    # Insert the rows into the table
+    mysql_hook.insert_rows(table='dimm_ambito_enseanza', rows=data_to_insert, target_fields=['id','desc_ambito', 'id_rama', 'nombre_rama'])
+    
+    logging.info("Datos cargados de manera exitosa!")
