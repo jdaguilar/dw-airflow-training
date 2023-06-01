@@ -27,6 +27,9 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+logs/scheduler/latest
+/data/hechos_prueba.ipynb
+./data/hechos_prueba.ipynb
 MANIFEST
 
 # PyInstaller
@@ -78,6 +81,10 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
+/data/processed/*.ipynb
+
+
 
 # IPython
 profile_default/
@@ -129,3 +136,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+/data/processed/
